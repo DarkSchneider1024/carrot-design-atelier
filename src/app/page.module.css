@@ -103,7 +103,7 @@
   font-weight: 700;
   text-align: center;
   margin-bottom: 4rem;
-  color: var(--primary-dark);
+  color: #2d3436; /* Deep charcoal for better harmony */
 }
 
 .grid {
@@ -148,7 +148,7 @@
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: var(--primary-dark);
+  color: #2d3436;
 }
 
 .cardDescription {
@@ -160,15 +160,16 @@
 .cardLink {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: var(--primary-dark);
+  background-color: #ff6d2e; /* Vibrant orange instead of dark teal */
   color: #fff;
   border-radius: 50px;
   font-weight: 600;
-  transition: background var(--transition-speed);
+  transition: all var(--transition-speed);
 }
 
 .cardLink:hover {
-  background-color: var(--accent-orange);
+  background-color: #e65100;
+  transform: scale(1.05);
 }
 
 @media (max-width: 1024px) {
