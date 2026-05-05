@@ -13,8 +13,9 @@ export default function Home() {
       tags: []
     },
     {
-      title: "購物網站",
+      title: "PickUp - 購物網站",
       description: "專為電子商務門市設計的系統。簡化流程，優化管理，並提供專業的數據分析報表。",
+
       image: `${prefix}/images/pickup.png`,
       link: "https://pick-up-jade.vercel.app/",
       tags: []
