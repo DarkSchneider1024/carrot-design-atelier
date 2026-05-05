@@ -94,7 +94,7 @@ export default function Home() {
         color: "var(--text-light)" 
       }}>
         <div className="container">
-          <p>© 2026 卡洛特設計工坊 Carrot Design Atelier. All rights reserved.</p>
+          <p>© 卡洛特工作室 Carrot Studio. All rights reserved.</p>
           <p style={{ marginTop: "1rem", opacity: 0.8, fontSize: "1.1rem", fontStyle: "italic", letterSpacing: "0.05em" }}>
             「將靈感鑄造成數位藝術，讓創意在代碼中優雅躍動。」
           </p>
