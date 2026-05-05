@@ -1,13 +1,17 @@
+'use client';
+
 import React from 'react';
 import styles from './Footer.module.css';
+import { useLanguage } from '@/context/LanguageContext';
 
 const Footer: React.FC = () => {
+  const { t } = useLanguage();
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className={styles.footer}>
       <div className={styles.copyright}>
-        Copyright © {currentYear} Carrot Studio. All Rights Reserved.
+        Copyright © {currentYear} Carrot Studio. {t.copyright}
       </div>
       
       <div className={styles.divider}></div>

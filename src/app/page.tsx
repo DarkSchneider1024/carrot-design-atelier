@@ -1,21 +1,24 @@
+'use client';
+
 import Image from "next/image";
 import styles from "./page.module.css";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Home() {
+  const { t } = useLanguage();
   const prefix = process.env.NODE_ENV === "production" ? "/carrot-design-atelier" : "";
 
   const projects = [
     {
-      title: "FastOrder - 智能點餐系統",
-      description: "為餐廳與團購設計的現代化點餐平台，提供流暢的用戶體驗與強大的後台管理功能。支持多種支付方式與實時訂單追蹤。",
+      title: t.fastOrder.title,
+      description: t.fastOrder.description,
       image: `${prefix}/images/fastorder.png`,
       link: "https://fast-order-beige.vercel.app/",
       tags: []
     },
     {
-      title: "PickUp - 購物網站",
-      description: "專為電子商務門市設計的系統。簡化流程，優化管理，並提供專業的數據分析報表。",
-
+      title: t.pickUp.title,
+      description: t.pickUp.description,
       image: `${prefix}/images/pickup.png`,
       link: "https://pick-up-jade.vercel.app/",
       tags: []
@@ -40,14 +43,14 @@ export default function Home() {
               />
             </div>
             <div className={styles.tagline}>
-              CREATIVE TECH STUDIO
+              {t.tagline}
             </div>
           </div>
 
           <div className={styles.textSide}>
-            <h2 className={styles.enTitle}>CARROT STUDIO</h2>
-            <h1 className={styles.chTitle}>卡洛特工作室</h1>
-            <p className={styles.services}>網站架設 / App製作 / 遊戲製作</p>
+            <h2 className={styles.enTitle}>{t.heroTitle}</h2>
+            <h1 className={styles.chTitle}>{t.heroChTitle}</h1>
+            <p className={styles.services}>{t.services}</p>
           </div>
         </div>
       </section>
@@ -56,7 +59,7 @@ export default function Home() {
       {/* Works Section */}
       <section className={styles.worksSection}>
         <div className="container">
-          <h2 className={styles.sectionTitle}>精選作品 Showcase</h2>
+          <h2 className={styles.sectionTitle}>{t.showcaseTitle}</h2>
           <div className={styles.grid}>
             {projects.map((project, index) => (
               <div key={index} className={styles.card}>
@@ -77,7 +80,7 @@ export default function Home() {
                     rel="noopener noreferrer" 
                     className={styles.cardLink}
                   >
-                    查看作品 →
+                    {t.viewWork}
                   </a>
                 </div>
               </div>
@@ -86,13 +89,7 @@ export default function Home() {
         </div>
       </section>
       
-      <footer className={styles.footer}>
-        <div className="container">
-          <p className={styles.copyright}>
-            Copyright © 2026 Carrot Studio. All Rights Reserved.
-          </p>
-        </div>
-      </footer>
     </main>
   );
 }
+

@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import { LanguageProvider } from "@/context/LanguageContext";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -61,10 +63,13 @@ export default function RootLayout({
         <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GA_ID} />
       )}
       <body className={`${outfit.variable}`} style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-        <div style={{ flex: 1 }}>
-          {children}
-        </div>
-        <Footer />
+        <LanguageProvider>
+          <Header />
+          <div style={{ flex: 1, paddingTop: '80px' }}>
+            {children}
+          </div>
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );
