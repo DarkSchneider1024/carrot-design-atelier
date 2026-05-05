@@ -24,29 +24,31 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      {/* Hero Section */}
-      <section className={styles.hero}>
-        <div className={styles.leftSection}>
-          <div className={styles.logoContainer}>
-            <Image 
-              src={`${prefix}/images/logo.png`} 
-              alt="Carrot Design Atelier Logo" 
-              width={320} 
-              height={600} 
-              className={styles.logo}
-              priority
-            />
+      {/* Hero Section - Redesigned */}
+      <section className={styles.heroSection}>
+        <div className={styles.bgSplit}></div>
+        <div className={styles.heroContent}>
+          <div className={styles.logoSide}>
+            <div className={styles.mascotContainer}>
+              <Image 
+                src={`${prefix}/images/gpt_logo.png`} 
+                alt="Carrot Studio Logo" 
+                width={300}
+                height={400}
+                className={styles.mascotImage}
+                priority
+              />
+            </div>
+            <div className={styles.tagline}>
+              CREATIVE TECH STUDIO
+            </div>
+          </div>
 
+          <div className={styles.textSide}>
+            <h2 className={styles.enTitle}>CARROT STUDIO</h2>
+            <h1 className={styles.chTitle}>卡洛特工作室</h1>
+            <p className={styles.services}>網站架設 / App製作 / 遊戲製作</p>
           </div>
-          <div className={styles.brandName}>
-            <h1 className={styles.brandMain}>CARROT</h1>
-            <h2 className={styles.brandSub}>DESIGN ATELIER</h2>
-          </div>
-        </div>
-        
-        <div className={styles.rightSection}>
-          <h2 className={styles.studioTitle}>卡洛特設計工坊</h2>
-          <p className={styles.services}>網站架設 / App製作 / 遊戲製作</p>
         </div>
       </section>
 

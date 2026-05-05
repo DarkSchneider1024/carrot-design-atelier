@@ -14,22 +14,22 @@ export const viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://carrot-studio.com"),
-  title: "卡洛特設計工坊 | Carrot Design Atelier - 專業網站與 App 製作",
-  description: "卡洛特設計工坊 (Carrot Design Atelier) 提供專業的網站架設、App 製作、遊戲開發服務。精選作品展示：FastOrder 與 PickUp。",
-  keywords: "卡洛特設計工坊, Carrot Design Atelier, 網站架設, App 製作, 遊戲製作, FastOrder, PickUp, 網頁設計, 數位轉型",
-  authors: [{ name: "Carrot Design Atelier" }],
+  title: "卡洛特工作室 | Carrot Studio - 專業網站與 App 製作",
+  description: "卡洛特工作室 (Carrot Studio) 提供專業的網站架設、App 製作、遊戲開發服務。精選作品展示：FastOrder 與 PickUp。",
+  keywords: "卡洛特工作室, Carrot Studio, 網站架設, App 製作, 遊戲製作, FastOrder, PickUp, 網頁設計, 數位轉型",
+  authors: [{ name: "Carrot Studio" }],
   robots: "index, follow",
   openGraph: {
-    title: "卡洛特設計工坊 | Carrot Design Atelier - 專業網站與 App 製作",
+    title: "卡洛特工作室 | Carrot Studio - 專業網站與 App 製作",
     description: "專業網站架設、App 製作、遊戲開發服務。打造卓越的數位體驗。",
     url: "https://carrot-studio.com",
-    siteName: "Carrot Design Atelier",
+    siteName: "Carrot Studio",
     images: [
       {
-        url: "/images/logo.png",
+        url: "/images/gpt_logo.png",
         width: 800,
         height: 600,
-        alt: "Carrot Design Atelier Logo",
+        alt: "Carrot Studio Logo",
       },
     ],
     locale: "zh_TW",
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "卡洛特設計工坊 | Carrot Design Atelier",
+    title: "卡洛特工作室 | Carrot Studio",
     description: "專業網站架設、App 製作、遊戲開發服務。",
-    images: ["/images/logo.png"],
+    images: ["/images/gpt_logo.png"],
   },
 
   icons: {
