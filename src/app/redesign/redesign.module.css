@@ -17,6 +17,7 @@
     background-color: #fcfbf7;
     clip-path: ellipse(100% 100% at 100% 50%);
     z-index: 1;
+    transition: all 0.5s ease;
 }
 
 .content {
@@ -26,6 +27,7 @@
     z-index: 2;
     align-items: center;
     padding: 0 10%;
+    transition: all 0.5s ease;
 }
 
 .logoSection {
@@ -83,6 +85,68 @@
     letter-spacing: 8px;
     font-weight: 300;
     font-size: 0.9rem;
+}
+
+/* Mobile RWD Adjustments */
+@media (max-width: 1024px) {
+    .enTitle { font-size: 2.8rem; }
+    .chTitle { font-size: 3.2rem; }
+}
+
+@media (max-width: 768px) {
+    .container {
+        height: auto;
+        min-height: 100vh;
+        overflow-y: auto;
+    }
+
+    .bgSplit {
+        width: 100%;
+        height: 50%;
+        top: 50%;
+        left: 0;
+        clip-path: ellipse(150% 100% at 50% 100%);
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .logoSection {
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .mascotContainer {
+        width: 220px;
+        height: 300px;
+    }
+
+    .tagline {
+        margin-top: -30px;
+    }
+
+    .textSection {
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .enTitle {
+        font-size: 2.2rem;
+        background-size: 100% auto;
+    }
+
+    .chTitle {
+        font-size: 2.5rem;
+    }
+
+    .subTitle {
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
 }
 
 @keyframes float {
