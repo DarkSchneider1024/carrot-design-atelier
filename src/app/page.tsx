@@ -31,11 +31,12 @@ export default function Home() {
             <Image 
               src={`${prefix}/images/logo.png`} 
               alt="Carrot Design Atelier Logo" 
-              width={240} 
-              height={240} 
+              width={320} 
+              height={600} 
               className={styles.logo}
               priority
             />
+
           </div>
           <div className={styles.brandName}>
             <h1 className={styles.brandMain}>CARROT</h1>
