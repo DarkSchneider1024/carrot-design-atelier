@@ -90,8 +90,8 @@ export default function Home() {
       <footer style={{ 
         padding: "4rem 0", 
         textAlign: "center", 
-        backgroundColor: "var(--primary-dark)", 
-        color: "var(--text-light)" 
+        backgroundColor: "#fff0e6", /* Soft Peach/Orange */
+        color: "#555" /* Dark gray for contrast */
       }}>
         <div className="container">
           <p>© 卡洛特工作室 Carrot Studio. All rights reserved.</p>
