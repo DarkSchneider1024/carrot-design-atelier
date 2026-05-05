@@ -4,7 +4,7 @@
   height: 100vh;
   display: flex;
   overflow: hidden;
-  background-color: #0a2e2e;
+  background-color: #ffffff; /* Clean light background */
   font-family: 'Outfit', sans-serif;
 }
 
@@ -14,7 +14,7 @@
   top: 0;
   width: 45%;
   height: 100%;
-  background-color: #fcfbf7;
+  background-color: #fff9f0; /* Very light warm accent */
   clip-path: ellipse(100% 100% at 100% 50%);
   z-index: 1;
   transition: all 0.5s ease;
@@ -54,7 +54,7 @@
 
 .tagline {
   margin-top: -50px;
-  color: #fff;
+  color: #a0a0a0; /* Subtle gray for light theme */
   letter-spacing: 8px;
   font-weight: 300;
   font-size: 0.9rem;
@@ -217,8 +217,9 @@
   }
 
   .enTitle {
-    font-size: 2.2rem;
+    font-size: clamp(1.5rem, 9vw, 2.2rem); /* Dynamic font sizing to prevent overflow */
     background-size: 100% auto;
+    white-space: nowrap;
   }
 
   .chTitle {
