@@ -85,23 +85,14 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer style={{ 
-        padding: "4rem 0", 
-        textAlign: "center", 
-        backgroundColor: "#fff0e6", /* Soft Peach/Orange */
-        color: "#555" /* Dark gray for contrast */
-      }}>
+      
+      <footer className={styles.footer}>
         <div className="container">
-          <p>© 卡洛特工作室 Carrot Studio. All rights reserved.</p>
-          <p style={{ marginTop: "1rem", opacity: 0.8, fontSize: "1.1rem", fontStyle: "italic", letterSpacing: "0.05em" }}>
-            「將靈感鑄造成數位藝術，讓創意在代碼中優雅躍動。」
+          <p className={styles.copyright}>
+            Copyright © 2026 Carrot Studio. All Rights Reserved.
           </p>
         </div>
       </footer>
-
-
     </main>
   );
 }

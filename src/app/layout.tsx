@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/Footer";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -48,7 +50,6 @@ export const metadata: Metadata = {
   },
 };
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -56,11 +57,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-TW">
-      <body className={`${outfit.variable}`}>
-        {children}
+      {process.env.NEXT_PUBLIC_GA_ID && (
+        <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GA_ID} />
+      )}
+      <body className={`${outfit.variable}`} style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+        <div style={{ flex: 1 }}>
+          {children}
+        </div>
+        <Footer />
       </body>
     </html>
   );
 }
-
-
