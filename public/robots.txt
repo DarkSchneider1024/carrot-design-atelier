@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://carrot-studio.com/sitemap.xml

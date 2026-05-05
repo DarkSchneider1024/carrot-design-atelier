@@ -1,0 +1,182 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  background-color: var(--primary-light);
+}
+
+.leftSection {
+  flex: 1.2;
+  background-color: var(--primary-dark);
+  color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  position: relative;
+  z-index: 2;
+  clip-path: ellipse(100% 150% at 0% 50%);
+}
+
+.rightSection {
+  flex: 1;
+  background-color: var(--primary-light);
+  color: var(--text-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4rem 4rem 4rem 0;
+  z-index: 1;
+}
+
+.logoContainer {
+  margin-bottom: 2rem;
+  animation: fadeIn 1s ease-out;
+}
+
+.logo {
+  width: 180px;
+  height: auto;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
+}
+
+.brandName {
+  text-align: left;
+  animation: fadeIn 1.2s ease-out;
+}
+
+.brandMain {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--accent-gold);
+  letter-spacing: 0.1em;
+  line-height: 1;
+}
+
+.brandSub {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--accent-gold);
+  letter-spacing: 0.2em;
+}
+
+.studioTitle {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  animation: fadeIn 1.4s ease-out;
+}
+
+.services {
+  font-size: 1.25rem;
+  color: #666;
+  letter-spacing: 0.1em;
+  animation: fadeIn 1.6s ease-out;
+}
+
+.worksSection {
+  padding: 8rem 0;
+  background-color: #fff;
+}
+
+.sectionTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: var(--primary-dark);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.cardImage {
+  width: 100%;
+  height: 250px;
+  background-color: #f0f0f0;
+  position: relative;
+  overflow: hidden;
+}
+
+.cardContent {
+  padding: 2rem;
+  flex-grow: 1;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--primary-dark);
+}
+
+.cardDescription {
+  color: #666;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.cardLink {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-dark);
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: background var(--transition-speed);
+}
+
+.cardLink:hover {
+  background-color: var(--accent-orange);
+}
+
+@media (max-width: 968px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .leftSection {
+    padding: 6rem 2rem;
+    clip-path: none;
+    flex: 1;
+    width: 100%;
+  }
+  
+  .rightSection {
+    padding: 4rem 2rem;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    width: 100%;
+  }
+  
+  .brandMain { font-size: 3rem; }
+  .studioTitle { font-size: 2.5rem; }
+}
