@@ -10,14 +10,14 @@ export default function Home() {
       description: "為餐廳與團購設計的現代化點餐平台，提供流暢的用戶體驗與強大的後台管理功能。支持多種支付方式與實時訂單追蹤。",
       image: `${prefix}/images/fastorder.png`,
       link: "https://fast-order-beige.vercel.app/",
-      tags: ["React", "Firebase", "Next.js", "RWD"]
+      tags: []
     },
     {
-      title: "PickUp Shop - 門市自取管理系統",
-      description: "專為電子商務門市設計的自取管理系統。簡化取貨流程，優化庫存管理，並提供專業的數據分析報表。",
+      title: "購物網站",
+      description: "專為電子商務門市設計的系統。簡化流程，優化管理，並提供專業的數據分析報表。",
       image: `${prefix}/images/pickup.png`,
       link: "https://pick-up-jade.vercel.app/",
-      tags: ["Next.js 15", "Firebase", "Tailwind", "ECPay"]
+      tags: []
     }
   ];
 
@@ -29,7 +29,7 @@ export default function Home() {
           <div className={styles.logoContainer}>
             <Image 
               src={`${prefix}/images/logo.png`} 
-              alt="Carrot Studio Logo" 
+              alt="Carrot Design Atelier Logo" 
               width={240} 
               height={240} 
               className={styles.logo}
@@ -38,12 +38,12 @@ export default function Home() {
           </div>
           <div className={styles.brandName}>
             <h1 className={styles.brandMain}>CARROT</h1>
-            <h2 className={styles.brandSub}>STUDIO</h2>
+            <h2 className={styles.brandSub}>DESIGN ATELIER</h2>
           </div>
         </div>
         
         <div className={styles.rightSection}>
-          <h2 className={styles.studioTitle}>卡洛特工作室</h2>
+          <h2 className={styles.studioTitle}>卡洛特設計工坊</h2>
           <p className={styles.services}>網站架設 / App製作 / 遊戲製作</p>
         </div>
       </section>
@@ -67,19 +67,6 @@ export default function Home() {
                 <div className={styles.cardContent}>
                   <h3 className={styles.cardTitle}>{project.title}</h3>
                   <p className={styles.cardDescription}>{project.description}</p>
-                  <div style={{ marginBottom: "1.5rem", display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
-                    {project.tags.map((tag, tIndex) => (
-                      <span key={tIndex} style={{ 
-                        fontSize: "0.8rem", 
-                        padding: "0.2rem 0.6rem", 
-                        backgroundColor: "#f0f0f0", 
-                        borderRadius: "4px",
-                        color: "#666"
-                      }}>
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
                   <a 
                     href={project.link} 
                     target="_blank" 
@@ -103,12 +90,14 @@ export default function Home() {
         color: "var(--text-light)" 
       }}>
         <div className="container">
-          <p>© 2026 卡洛特工作室 Carrot Studio. All rights reserved.</p>
-          <p style={{ marginTop: "1rem", opacity: 0.6, fontSize: "0.9rem" }}>
-            打造卓越的數位體驗，讓創意無限延伸。
+          <p>© 2026 卡洛特設計工坊 Carrot Design Atelier. All rights reserved.</p>
+          <p style={{ marginTop: "1rem", opacity: 0.8, fontSize: "1.1rem", fontStyle: "italic", letterSpacing: "0.05em" }}>
+            「將靈感鑄造成數位藝術，讓創意在代碼中優雅躍動。」
           </p>
         </div>
       </footer>
+
+
     </main>
   );
 }
