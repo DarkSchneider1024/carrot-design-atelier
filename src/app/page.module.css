@@ -8,7 +8,7 @@
 }
 
 .leftSection {
-  flex: 1.2;
+  flex: 1.4;
   background-color: var(--primary-dark);
   color: var(--text-light);
   display: flex;
@@ -18,7 +18,7 @@
   padding: 4rem;
   position: relative;
   z-index: 2;
-  clip-path: ellipse(100% 150% at 0% 50%);
+  clip-path: ellipse(120% 120% at 20% 50%);
 }
 
 .rightSection {
@@ -29,9 +29,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 4rem 4rem 4rem 0;
+  padding: 4rem 4rem 4rem 2rem;
   z-index: 1;
 }
+
 
 .logoContainer {
   margin-bottom: 2rem;
