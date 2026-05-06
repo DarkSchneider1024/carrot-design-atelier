@@ -48,9 +48,16 @@ const Footer: React.FC = () => {
         <div className={styles.column}>
           <h4 className={styles.columnTitle}>{t.sitemapTitle}</h4>
           <ul className={styles.linkList}>
-            {t.sitemapItems.map((item: string, i: number) => (
-              <li key={i}>{item}</li>
-            ))}
+            {t.sitemapItems.map((item: string, i: number) => {
+              if (item === t.contact) {
+                return (
+                  <li key={i}>
+                    <a href={`mailto:${t.email}`} className={styles.footerLink}>{item}</a>
+                  </li>
+                );
+              }
+              return <li key={i}>{item}</li>;
+            })}
           </ul>
         </div>
 
@@ -59,6 +66,7 @@ const Footer: React.FC = () => {
           <h4 className={styles.columnTitle}>{t.contactTitle}</h4>
           <div className={styles.contactDetails}>
             <p className={styles.contactItem}><a href="tel:0963208318" className={styles.phoneLink}>0963-208-318</a></p>
+            <p className={styles.contactItem}><a href={`mailto:${t.email}`} className={styles.emailLink}>{t.email}</a></p>
             <p className={styles.contactItem}>{t.address}</p>
             <p className={styles.contactItem}>{t.officeHours}</p>
             <p className={styles.contactItem}>{t.closedDays}</p>
