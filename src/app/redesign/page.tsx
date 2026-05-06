@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import styles from './redesign.module.css';
 
 export default function RedesignPage() {
@@ -11,11 +12,14 @@ export default function RedesignPage() {
         {/* Logo Section */}
         <div className={styles.logoSection}>
           <div className={styles.mascotContainer}>
-            <img 
+            <Image 
               src="/images/gpt_logo.png" 
               alt="Carrot Studio Logo" 
+              width={500}
+              height={500}
               className="w-full h-full object-contain"
               style={{ filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.2))' }}
+              priority
             />
           </div>
           <div className={styles.tagline}>

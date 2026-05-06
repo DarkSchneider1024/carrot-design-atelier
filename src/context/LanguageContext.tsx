@@ -17,6 +17,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   useEffect(() => {
     const savedLocale = localStorage.getItem('locale') as Locale;
     if (savedLocale && (savedLocale === 'en' || savedLocale === 'zh')) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setLocaleState(savedLocale);
     } else if (typeof window !== 'undefined') {
       const browserLang = navigator.language.split('-')[0];
