@@ -20,7 +20,16 @@ export const translations = {
     switchLang: "中文",
     contact: "Contact Us",
     contactLine: "LINE ID",
-    contactPhone: "Phone"
+    contactPhone: "Phone",
+    footerDesc: "Carrot Studio provides professional web design, App development, and digital marketing services. We help businesses build high-quality digital products and enhance brand value.",
+    servicesTitle: "Services",
+    sitemapTitle: "Sitemap",
+    contactTitle: "Contact Information",
+    address: "101, Section 5, Xinyi Rd, Taipei City (Xinyi District)",
+    officeHours: "Mon-Fri AM 09:00 ~ PM 18:00",
+    closedDays: "Sat-Sun Closed",
+    serviceItems: ["Web Construction", "App Development", "Game Production", "UI/UX Design", "SEO Optimization"],
+    sitemapItems: ["About Us", "Featured Works", "Service Items", "Contact Us"]
   },
   zh: {
     title: "卡洛特工作室 | Carrot Studio - 專業網站與 App 製作",
@@ -43,7 +52,16 @@ export const translations = {
     switchLang: "English",
     contact: "聯繫我們",
     contactLine: "LINE ID",
-    contactPhone: "行動電話"
+    contactPhone: "行動電話",
+    footerDesc: "卡洛特工作室提供專業的網頁設計、App 開發與數位行銷服務。協助企業打造高品質的數位產品，提升品牌價值與用戶轉換。",
+    servicesTitle: "服務項目",
+    sitemapTitle: "網站地圖",
+    contactTitle: "聯絡資訊",
+    address: "台北市信義區信義路五段7號 (台北101)",
+    officeHours: "週一至週五 AM 09:00 ~ PM 18:00",
+    closedDays: "週六、週日公休",
+    serviceItems: ["形象網站設計", "購物網站建置", "APP 客製開發", "UI/UX 介面設計", "SEO 搜尋優化"],
+    sitemapItems: ["關於我們", "精選作品", "服務項目", "聯絡我們"]
   }
 };
 
