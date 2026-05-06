@@ -7,8 +7,12 @@ import { useLanguage } from "@/context/LanguageContext";
 export default function Home() {
   const { t } = useLanguage();
   const isProd = process.env.NODE_ENV === "production";
-  const isCustomDomain = process.env.NEXT_PUBLIC_IS_CUSTOM_DOMAIN === "true";
-  const prefix = isProd && !isCustomDomain ? "/carrot-design-atelier" : "";
+  
+  // Try to detect if we are on a custom domain by checking if the base path is likely present
+  // In many cases, it's safer to just check if we're on GitHub Pages subpath environment
+  const prefix = isProd && typeof window !== 'undefined' && window.location.hostname.includes('github.io') 
+    ? "/carrot-design-atelier" 
+    : "";
 
   const projects = [
     {
