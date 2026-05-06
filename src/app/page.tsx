@@ -34,7 +34,7 @@ export default function Home() {
       description: t.pickUp.description,
       image: `${prefix}/images/pickup.png`,
       link: "https://pick-up-jade.vercel.app/",
-      tags: ["E-commerce", "BI Reports"]
+      tags: ["E-commerce", "Management"]
     }
   ];
 
