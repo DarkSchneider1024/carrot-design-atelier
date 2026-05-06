@@ -15,6 +15,17 @@ const Footer: React.FC = () => {
       </div>
       
       <div className={styles.divider}></div>
+
+      <div className={styles.contactInfo}>
+        <div className={styles.contactItem}>
+          <span className={styles.contactLabel}>{t.contactLine}:</span>
+          <a href="https://line.me/ti/p/~gueiwan" className={styles.contactValue} target="_blank" rel="noopener noreferrer">gueiwan</a>
+        </div>
+        <div className={styles.contactItem}>
+          <span className={styles.contactLabel}>{t.contactPhone}:</span>
+          <a href="tel:0963208318" className={styles.contactValue}>0963-208-318</a>
+        </div>
+      </div>
       
       <div className={styles.socialLinks}>
         {/* Facebook Icon */}

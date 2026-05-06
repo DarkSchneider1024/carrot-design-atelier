@@ -25,6 +25,38 @@
   margin-bottom: 2rem;
 }
 
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.contactLabel {
+  font-weight: 500;
+  color: #666;
+}
+
+.contactValue {
+  font-weight: 600;
+  color: #ff8c42; /* Carrot Orange */
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.contactValue:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
 .socialLinks {
   display: flex;
   gap: 1.5rem;

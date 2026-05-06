@@ -17,7 +17,10 @@ export const translations = {
       title: "PickUp - Shopping Website",
       description: "A system designed specifically for e-commerce stores. Streamlines processes, optimizes management, and provides professional data analysis reports."
     },
-    switchLang: "中文"
+    switchLang: "中文",
+    contact: "Contact Us",
+    contactLine: "LINE ID",
+    contactPhone: "Phone"
   },
   zh: {
     title: "卡洛特工作室 | Carrot Studio - 專業網站與 App 製作",
@@ -37,7 +40,10 @@ export const translations = {
       title: "PickUp - 購物網站",
       description: "專為電子商務門市設計的系統。簡化流程，優化管理，並提供專業的數據分析報表。"
     },
-    switchLang: "English"
+    switchLang: "English",
+    contact: "聯繫我們",
+    contactLine: "LINE ID",
+    contactPhone: "行動電話"
   }
 };
 
