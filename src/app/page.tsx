@@ -6,22 +6,31 @@ import { useLanguage } from "@/context/LanguageContext";
 
 export default function Home() {
   const { t } = useLanguage();
-  const prefix = process.env.NODE_ENV === "production" ? "/carrot-design-atelier" : "";
+  const isProd = process.env.NODE_ENV === "production";
+  const isCustomDomain = process.env.NEXT_PUBLIC_IS_CUSTOM_DOMAIN === "true";
+  const prefix = isProd && !isCustomDomain ? "/carrot-design-atelier" : "";
 
   const projects = [
+    {
+      title: t.waferBI.title,
+      description: t.waferBI.description,
+      image: `${prefix}/images/hero_bg.png`, // Placeholder image
+      link: "https://wafer.carrot-atelier.online/",
+      tags: ["K8S", "Delta Lake"]
+    },
     {
       title: t.fastOrder.title,
       description: t.fastOrder.description,
       image: `${prefix}/images/fastorder.png`,
       link: "https://fast-order-beige.vercel.app/",
-      tags: []
+      tags: ["Next.js", "Ordering System"]
     },
     {
       title: t.pickUp.title,
       description: t.pickUp.description,
       image: `${prefix}/images/pickup.png`,
       link: "https://pick-up-jade.vercel.app/",
-      tags: []
+      tags: ["E-commerce", "BI Reports"]
     }
   ];
 
@@ -74,6 +83,13 @@ export default function Home() {
                 <div className={styles.cardContent}>
                   <h3 className={styles.cardTitle}>{project.title}</h3>
                   <p className={styles.cardDescription}>{project.description}</p>
+                  {project.tags && project.tags.length > 0 && (
+                    <div className={styles.tags}>
+                      {project.tags.map((tag, tagIndex) => (
+                        <span key={tagIndex} className={styles.tag}>{tag}</span>
+                      ))}
+                    </div>
+                  )}
                   <a 
                     href={project.link} 
                     target="_blank" 

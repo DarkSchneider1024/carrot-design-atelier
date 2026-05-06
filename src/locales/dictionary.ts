@@ -17,6 +17,10 @@ export const translations = {
       title: "PickUp - Shopping Website",
       description: "A system designed specifically for e-commerce stores. Streamlines processes, optimizes management, and provides professional data analysis reports."
     },
+    waferBI: {
+      title: "Engineering BI Analysis Software",
+      description: "Professional engineering business intelligence platform using K8S and Delta Lake for large-scale data analysis."
+    },
     switchLang: "中文",
     contact: "Contact Us",
     contactLine: "LINE ID",
@@ -49,6 +53,10 @@ export const translations = {
     pickUp: {
       title: "PickUp - 購物網站",
       description: "專為電子商務門市設計的系統。簡化流程，優化管理，並提供專業的數據分析報表。"
+    },
+    waferBI: {
+      title: "工程 BI 分析軟體",
+      description: "專業的工程商業智慧分析平台，運用 K8S 與 Delta Lake 技術，實現大規模數據分析與可視化。"
     },
     switchLang: "English",
     contact: "聯繫我們",
