@@ -68,7 +68,7 @@ const Footer: React.FC = () => {
 
       <div className={styles.bottomRow}>
         <div className={styles.copyright}>
-          © 2020-2026 卡洛特工作室有限公司  {t.copyright}
+          © 2026 卡洛特工作室有限公司  {t.copyright}
         </div>
         <div className={styles.footerLinks}>
           <a href="#">隱私權政策</a>

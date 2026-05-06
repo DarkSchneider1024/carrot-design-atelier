@@ -38,6 +38,7 @@
   color: #666;
   margin-bottom: 2rem;
   max-width: 320px;
+  white-space: pre-line;
 }
 
 .columnTitle {
