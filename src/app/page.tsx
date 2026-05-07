@@ -25,7 +25,7 @@ export default function Home() {
     {
       title: t.waferBI.title,
       description: t.waferBI.description,
-      image: `${prefix}/images/hero_bg.png`, // Placeholder image
+      image: `${prefix}/images/wafer_bi.png`,
       link: "https://wafer.carrot-atelier.online/",
       tags: ["K8S", "Delta Lake"]
     },
