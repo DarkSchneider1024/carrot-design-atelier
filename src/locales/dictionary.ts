@@ -21,6 +21,10 @@ export const translations = {
       title: "Engineering BI Analysis Software",
       description: "Professional engineering business intelligence platform using K8S and Delta Lake for large-scale data analysis."
     },
+    atelier: {
+      title: "Carrot Studio - Branding Website",
+      description: "The official branding website for Carrot Studio, showcasing a modern, responsive design and professional service portfolio."
+    },
     switchLang: "中文",
     contact: "Contact Us",
     contactLine: "LINE ID",
@@ -57,6 +61,10 @@ export const translations = {
     waferBI: {
       title: "工程 BI 分析軟體",
       description: "專業的工程商業智慧分析平台，運用 K8S 與 Delta Lake 技術，實現大規模數據分析與可視化。"
+    },
+    atelier: {
+      title: "卡洛特工作室 - 形象官方網站",
+      description: "為卡洛特工作室打造的官方形象網站。採用現代化設計語法，結合流暢的動畫與響應式佈局，完美呈現代言品牌的專業形象。"
     },
     switchLang: "English",
     contact: "聯繫我們",

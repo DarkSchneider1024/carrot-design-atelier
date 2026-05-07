@@ -16,6 +16,13 @@ export default function Home() {
 
   const projects = [
     {
+      title: t.atelier.title,
+      description: t.atelier.description,
+      image: `${prefix}/images/atelier.png`,
+      link: "#",
+      tags: ["Next.js", "Branding"]
+    },
+    {
       title: t.waferBI.title,
       description: t.waferBI.description,
       image: `${prefix}/images/hero_bg.png`, // Placeholder image
