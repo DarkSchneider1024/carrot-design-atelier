@@ -18,28 +18,28 @@ export default function Home() {
     {
       title: t.atelier.title,
       description: t.atelier.description,
-      image: `${prefix}/images/atelier_cartoon.png`,
+      image: `${prefix}/images/atelier_jimmy.png`,
       link: "#",
       tags: ["Next.js", "Branding"]
     },
     {
       title: t.waferBI.title,
       description: t.waferBI.description,
-      image: `${prefix}/images/wafer_bi_cartoon.png`,
+      image: `${prefix}/images/wafer_bi_jimmy.png`,
       link: "https://wafer.carrot-atelier.online/",
       tags: ["K8S", "Delta Lake"]
     },
     {
       title: t.fastOrder.title,
       description: t.fastOrder.description,
-      image: `${prefix}/images/fastorder_cartoon.png`,
+      image: `${prefix}/images/fastorder_jimmy.png`,
       link: "https://fast-order-beige.vercel.app/",
       tags: ["Next.js", "Ordering System"]
     },
     {
       title: t.pickUp.title,
       description: t.pickUp.description,
-      image: `${prefix}/images/pickup_cartoon.png`,
+      image: `${prefix}/images/pickup_jimmy.png`,
       link: "https://pick-up-jade.vercel.app/",
       tags: ["E-commerce", "Management"]
     }
