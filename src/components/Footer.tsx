@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import styles from './Footer.module.css';
 import { useLanguage } from '@/context/LanguageContext';
 
@@ -52,7 +53,7 @@ const Footer: React.FC = () => {
               if (item === t.contact) {
                 return (
                   <li key={i}>
-                    <a href={`mailto:${t.email}`} className={styles.footerLink}>{item}</a>
+                    <Link href="/contact" className={styles.footerLink}>{item}</Link>
                   </li>
                 );
               }
@@ -60,6 +61,7 @@ const Footer: React.FC = () => {
             })}
           </ul>
         </div>
+
 
         {/* Column 4: Contact */}
         <div className={styles.column}>
