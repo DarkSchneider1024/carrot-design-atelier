@@ -38,7 +38,21 @@ export const translations = {
     officeHours: "Mon-Fri AM 09:00 ~ PM 18:00",
     closedDays: "Sat-Sun Closed",
     serviceItems: ["Web Construction", "App Development", "Game Production", "UI/UX Design", "SEO Optimization"],
-    sitemapItems: ["About Us", "Featured Works", "Service Items", "Contact Us"]
+    sitemapItems: ["About Us", "Featured Works", "Service Items", "Contact Us"],
+    form: {
+      name: "Your Name",
+      email: "Email Address",
+      subject: "Subject",
+      message: "Message",
+      send: "Send Message",
+      sending: "Sending...",
+      success: "Message sent successfully!",
+      error: "Failed to send message. Please try again.",
+      placeholderName: "Enter your name",
+      placeholderEmail: "Enter your email",
+      placeholderSubject: "What is this about?",
+      placeholderMessage: "How can we help you?"
+    }
   },
   zh: {
     title: "卡洛特工作室 | Carrot Studio - 專業網站與 App 製作",
@@ -79,9 +93,24 @@ export const translations = {
     officeHours: "週一至週五 AM 09:00 ~ PM 18:00",
     closedDays: "週六、週日公休",
     serviceItems: ["形象網站設計", "購物網站建置", "APP 客製開發", "UI/UX 介面設計", "SEO 搜尋優化"],
-    sitemapItems: ["關於我們", "精選作品", "服務項目", "聯絡我們"]
+    sitemapItems: ["關於我們", "精選作品", "服務項目", "聯絡我們"],
+    form: {
+      name: "您的姓名",
+      email: "電子郵件",
+      subject: "主旨",
+      message: "訊息內容",
+      send: "送出訊息",
+      sending: "傳送中...",
+      success: "訊息已成功送出！",
+      error: "傳送失敗，請稍後再試。",
+      placeholderName: "請輸入您的姓名",
+      placeholderEmail: "請輸入您的電子郵件",
+      placeholderSubject: "請問關於什麼事？",
+      placeholderMessage: "請描述您的需求或問題"
+    }
   }
 };
+
 
 export type Locale = "en" | "zh";
 export type TranslationKey = keyof typeof translations.en;
