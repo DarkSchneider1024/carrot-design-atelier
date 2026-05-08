@@ -1,8 +1,6 @@
 'use client';
 
 import React from 'react';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 import ContactForm from '../../components/ContactForm';
 import { useLanguage } from '../../context/LanguageContext';
 import styles from './ContactPage.module.css';
@@ -12,12 +10,10 @@ export default function ContactPage() {
 
   return (
     <main className={styles.main}>
-      <Header />
-      
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <h1 className={styles.title}>{t.contact}</h1>
-          <p className={styles.subtitle}>{t.footerDesc}</p>
+          <p className={styles.subtitle}>{t.contactDesc}</p>
         </div>
       </section>
 
@@ -44,8 +40,6 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </main>
   );
 }

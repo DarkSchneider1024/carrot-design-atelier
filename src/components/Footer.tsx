@@ -50,14 +50,17 @@ const Footer: React.FC = () => {
           <h4 className={styles.columnTitle}>{t.sitemapTitle}</h4>
           <ul className={styles.linkList}>
             {t.sitemapItems.map((item: string, i: number) => {
-              if (item === t.contact) {
-                return (
-                  <li key={i}>
-                    <Link href="/contact" className={styles.footerLink}>{item}</Link>
-                  </li>
-                );
-              }
-              return <li key={i}>{item}</li>;
+              let href = "/";
+              if (i === 0) href = "/#hero"; // About Us
+              if (i === 1) href = "/#works"; // Featured Works
+              if (i === 2) href = "/#hero"; // Service Items
+              if (i === 3) href = "/contact"; // Contact Us
+              
+              return (
+                <li key={i}>
+                  <Link href={href} className={styles.footerLink}>{item}</Link>
+                </li>
+              );
             })}
           </ul>
         </div>

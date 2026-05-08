@@ -48,7 +48,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       {/* Hero Section - Redesigned */}
-      <section className={styles.heroSection}>
+      <section id="hero" className={styles.heroSection}>
         <div className={styles.bgSplit}></div>
         <div className={styles.heroContent}>
           <div className={styles.logoSide}>
@@ -77,7 +77,7 @@ export default function Home() {
 
 
       {/* Works Section */}
-      <section className={styles.worksSection}>
+      <section id="works" className={styles.worksSection}>
         <div className="container">
           <h2 className={styles.sectionTitle}>{t.showcaseTitle}</h2>
           <div className={styles.grid}>

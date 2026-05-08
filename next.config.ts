@@ -8,8 +8,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: isProd && !isCustomDomain ? "/carrot-design-atelier" : "",
-  assetPrefix: isProd && !isCustomDomain ? "/carrot-design-atelier" : "",
+  // Only use basePath for GitHub Pages subpaths, not for custom domains or Vercel
+  basePath: isProd && !isCustomDomain && !process.env.VERCEL ? "/carrot-design-atelier" : "",
+  assetPrefix: isProd && !isCustomDomain && !process.env.VERCEL ? "/carrot-design-atelier" : "",
 };
 
 
