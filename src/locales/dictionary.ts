@@ -55,8 +55,13 @@ export const translations = {
       placeholderMessage: "How can we help you?"
     },
     linksTitle: "Links | Carrot Design Atelier",
-    linksHeroSlogan: "2026 Digital Aesthetic Pioneer",
-    linksHeroDesc: "Founded in 2026, Carrot Design Atelier is dedicated to combining cutting-edge technology with artistic sensibility to create digital experiences that transcend the era."
+    linksHeroSlogan: "Redefining Aesthetics in the Pulse of 2026.",
+    linksHeroDesc: "We are not just developers; we are curators of the digital realm. Combining ultimate visual sensory with cutting-edge technology to give brands a vitality that transcends time and space.",
+    linksService1: "Vision Reconstruction — Breaking mediocre digital boundaries through the language of design.",
+    linksService2: "Soul Crafting — Transforming brand spirit into seamless interactive experiences.",
+    linksService3: "Tech Resonance — Supporting infinite imagination of the future with high-performance full-stack technology.",
+    linksContactSlogan: "Let us find resonance in the digital sea of stars.",
+    linksContactDesc: "Whether it's an innovative idea or deep transformation, we look forward to sketching the future with you."
   },
   zh: {
     title: "卡洛特工作室 | Carrot Studio - 專業網站與 App 製作",
@@ -114,8 +119,13 @@ export const translations = {
       placeholderMessage: "請描述您的需求或問題"
     },
     linksTitle: "相關連結 | Carrot Design Atelier",
-    linksHeroSlogan: "2026 數位美學領航者",
-    linksHeroDesc: "創立於 2026 年，Carrot Design Atelier 致力於將前衛科技與藝術感結合，為品牌打造超越時代的數位體驗。"
+    linksHeroSlogan: "在光影與代碼之間，預見 2026 的美學定義。",
+    linksHeroDesc: "我們不只是開發者，更是數位世界的策展人。結合極致的視覺感官與最前衛的技術，為品牌賦予跨越時空的生命力。",
+    linksService1: "視界重構 — 用設計的語言，打破平庸的數位邊界。",
+    linksService2: "靈魂鑄造 — 將品牌精神轉化為流暢的互動體驗。",
+    linksService3: "技術共鳴 — 以高效能全端技術，撐起對未來的無限想像。",
+    linksContactSlogan: "讓我們在數位的星海中，找到共鳴。",
+    linksContactDesc: "無論是創新的點子或深度的轉型，期待與您一同勾勒未來。"
   }
 };
 

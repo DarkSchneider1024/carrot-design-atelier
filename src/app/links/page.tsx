@@ -5,28 +5,20 @@ import styles from './links.module.css';
 import { useLanguage } from '@/context/LanguageContext';
 
 export default function LinksPage() {
-  const { t } = useLanguage();
+  const { t } = useLanguage() as any;
 
   const services = [
     {
-      icon: '✨',
-      title: t.serviceItems?.[0] || '創新網站設計',
-      desc: '結合美學與技術，打造令人驚嘆的數位門面。'
+      title: t.linksService1.split(' — ')[0],
+      desc: t.linksService1.split(' — ')[1]
     },
     {
-      icon: '🚀',
-      title: t.serviceItems?.[1] || '品牌數位轉型',
-      desc: '助品牌在數位浪潮中脫穎而出，實現卓越增長。'
+      title: t.linksService2.split(' — ')[0],
+      desc: t.linksService2.split(' — ')[1]
     },
     {
-      icon: '🛠️',
-      title: t.serviceItems?.[2] || '高效能全端開發',
-      desc: '從後端架構到前端互動，追求極致性能與穩定。'
-    },
-    {
-      icon: '🧠',
-      title: t.serviceItems?.[3] || 'AI 驅動使用者體驗',
-      desc: '導入最新 AI 技術，優化每一次的使用者互動。'
+      title: t.linksService3.split(' — ')[0],
+      desc: t.linksService3.split(' — ')[1]
     }
   ];
 
@@ -54,7 +46,6 @@ export default function LinksPage() {
 
       <section className={styles.contentSection}>
         <div className="container">
-          <h2 className={styles.sectionTitle}>{t.servicesTitle}</h2>
           <div className={styles.servicesGrid}>
             {services.map((service, index) => (
               <div 
@@ -62,11 +53,23 @@ export default function LinksPage() {
                 className={`${styles.serviceCard} fade-in`}
                 style={{ animationDelay: `${0.3 + index * 0.1}s` }}
               >
-                <div className={styles.serviceIcon}>{service.icon}</div>
+                <div className={styles.serviceDecorator}></div>
                 <h3 className={styles.serviceTitle}>{service.title}</h3>
                 <p className={styles.serviceDesc}>{service.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.contactSection}>
+        <div className="container">
+          <div className={`${styles.contactBox} fade-in`} style={{ animationDelay: '0.6s' }}>
+            <h2 className={styles.contactSlogan}>{t.linksContactSlogan}</h2>
+            <p className={styles.contactDesc}>{t.linksContactDesc}</p>
+            <a href="mailto:carrot771024@gmail.com" className={styles.contactBtn}>
+              {t.contact}
+            </a>
           </div>
         </div>
       </section>
