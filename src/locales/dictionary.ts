@@ -9,6 +9,8 @@ export const translations = {
     showcaseTitle: "Featured Works Showcase",
     viewWork: "View Work →",
     copyright: "All Rights Reserved.",
+    navHome: "Home",
+    navServices: "Services",
     fastOrder: {
       title: "FastOrder - Smart Ordering System",
       description: "A modern ordering platform designed for restaurants and group buying, providing a smooth user experience and powerful backend management. Supports multiple payment methods and real-time order tracking."
@@ -48,7 +50,7 @@ export const translations = {
       placeholderSubject: "What shall we discuss?",
       placeholderMessage: "Describe your dream..."
     },
-    linksTitle: "Links | Carrot Design Atelier",
+    linksTitle: "Services | Carrot Design Atelier",
     linksHeroSlogan: "Redefining Aesthetics in the Pulse of 2026.",
     linksHeroDesc: "We are not just developers; we are curators of the digital realm. Combining ultimate visual sensory with cutting-edge technology to give brands a vitality that transcends time and space.",
     linksService1: "Vision Reconstruction — Breaking mediocre digital boundaries through the language of design.",
@@ -67,6 +69,8 @@ export const translations = {
     showcaseTitle: "精選作品 Showcase",
     viewWork: "查看作品 →",
     copyright: "版權所有。",
+    navHome: "首頁",
+    navServices: "服務項目",
     fastOrder: {
       title: "FastOrder - 智能點餐系統",
       description: "為餐廳與團購設計的現代化點餐平台，提供流暢的用戶體驗與強大的後台管理功能。支持多種支付方式與實時訂單追蹤。"
@@ -113,7 +117,7 @@ export const translations = {
       placeholderSubject: "我們將探討什麼？",
       placeholderMessage: "請描述您的夢想與藍圖..."
     },
-    linksTitle: "相關連結 | Carrot Design Atelier",
+    linksTitle: "服務項目 | Carrot Design Atelier",
     linksHeroSlogan: "在光影與代碼之間，預見 2026 的美學定義。",
     linksHeroDesc: "我們不只是開發者，更是數位世界的策展人。結合極致的視覺感官與最前衛的技術，為品牌賦予跨越時空的生命力。",
     linksService1: "視界重構 — 用設計的語言，打破平庸的數位邊界。",

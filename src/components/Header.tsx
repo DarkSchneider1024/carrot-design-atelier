@@ -54,10 +54,10 @@ const Header: React.FC = () => {
         
         <nav className={styles.nav}>
           <Link href="/" className={styles.navLink}>
-            Home
+            {t.navHome}
           </Link>
           <Link href="/links" className={styles.navLink}>
-            Links
+            {t.navServices}
           </Link>
           <Link href="/contact" className={styles.navLink}>
             {t.contact}
