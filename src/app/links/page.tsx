@@ -5,7 +5,7 @@ import styles from './links.module.css';
 import { useLanguage } from '@/context/LanguageContext';
 
 export default function LinksPage() {
-  const { t } = useLanguage() as any;
+  const { t } = useLanguage();
 
   const services = [
     {
