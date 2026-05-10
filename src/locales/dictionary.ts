@@ -53,7 +53,10 @@ export const translations = {
       placeholderEmail: "Enter your email",
       placeholderSubject: "What is this about?",
       placeholderMessage: "How can we help you?"
-    }
+    },
+    linksTitle: "Links | Carrot Design Atelier",
+    linksHeroSlogan: "2026 Digital Aesthetic Pioneer",
+    linksHeroDesc: "Founded in 2026, Carrot Design Atelier is dedicated to combining cutting-edge technology with artistic sensibility to create digital experiences that transcend the era."
   },
   zh: {
     title: "卡洛特工作室 | Carrot Studio - 專業網站與 App 製作",
@@ -109,7 +112,10 @@ export const translations = {
       placeholderEmail: "請輸入您的電子郵件",
       placeholderSubject: "請問關於什麼事？",
       placeholderMessage: "請描述您的需求或問題"
-    }
+    },
+    linksTitle: "相關連結 | Carrot Design Atelier",
+    linksHeroSlogan: "2026 數位美學領航者",
+    linksHeroDesc: "創立於 2026 年，Carrot Design Atelier 致力於將前衛科技與藝術感結合，為品牌打造超越時代的數位體驗。"
   }
 };
 

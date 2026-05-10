@@ -53,6 +53,12 @@ const Header: React.FC = () => {
         </Link>
         
         <nav className={styles.nav}>
+          <Link href="/" className={styles.navLink}>
+            Home
+          </Link>
+          <Link href="/links" className={styles.navLink}>
+            Links
+          </Link>
           <Link href="/contact" className={styles.navLink}>
             {t.contact}
           </Link>
@@ -75,4 +81,3 @@ const Header: React.FC = () => {
 };
 
 export default Header;
-
