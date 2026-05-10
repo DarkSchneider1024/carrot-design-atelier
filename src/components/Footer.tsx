@@ -51,9 +51,9 @@ const Footer: React.FC = () => {
           <ul className={styles.linkList}>
             {t.sitemapItems.map((item: string, i: number) => {
               let href = "/";
-              if (i === 0) href = "/#hero"; // About Us
+              if (i === 0) href = "/links"; // About Us
               if (i === 1) href = "/#works"; // Featured Works
-              if (i === 2) href = "/#hero"; // Service Items
+              if (i === 2) href = "/links"; // Service Items
               if (i === 3) href = "/contact"; // Contact Us
               
               return (
