@@ -23,6 +23,13 @@ export default function Home() {
       tags: ["Next.js", "Branding"]
     },
     {
+      title: t.freezerShop.title,
+      description: t.freezerShop.description,
+      image: `${prefix}/images/freezer_shop_jimmy.png`,
+      link: "https://freezer-shop-five.vercel.app/",
+      tags: ["E-commerce", "Next.js"]
+    },
+    {
       title: t.waferBI.title,
       description: t.waferBI.description,
       image: `${prefix}/images/wafer_bi_jimmy.png`,

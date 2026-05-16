@@ -1,7 +1,7 @@
 export const translations = {
   en: {
     title: "Carrot Studio | Professional Website & App Development",
-    description: "Carrot Studio provides professional website construction, App production, and game development services. Featured works: FastOrder and PickUp.",
+    description: "Carrot Studio provides professional website construction, App production, and game development services. Featured works: Freezer Shop, FastOrder and PickUp.",
     heroTitle: "CARROT STUDIO",
     heroChTitle: "Carrot Studio",
     tagline: "CREATIVE TECH STUDIO",
@@ -26,6 +26,10 @@ export const translations = {
     atelier: {
       title: "Carrot Studio - Branding Website",
       description: "The official branding website for Carrot Studio, showcasing a modern, responsive design and professional service portfolio."
+    },
+    freezerShop: {
+      title: "Freezer Shop - High-end Clothing Concept",
+      description: "A premium minimalist clothing shopping website featuring a clean monochrome aesthetic and seamless user interface. Built with Next.js for maximum performance and elegance."
     },
     switchLang: "中文",
     contact: "Contact Us",
@@ -61,7 +65,7 @@ export const translations = {
   },
   zh: {
     title: "卡洛特工作室 | Carrot Studio - 專業網站與 App 製作",
-    description: "卡洛特工作室 (Carrot Studio) 提供專業的網站架設、App 製作、遊戲開發服務。精選作品展示：FastOrder 與 PickUp。",
+    description: "卡洛特工作室 (Carrot Studio) 提供專業的網站架設、App 製作、遊戲開發服務。精選作品展示：Freezer Shop、FastOrder 與 PickUp。",
     heroTitle: "CARROT STUDIO",
     heroChTitle: "卡洛特工作室",
     tagline: "CREATIVE TECH STUDIO",
@@ -86,6 +90,10 @@ export const translations = {
     atelier: {
       title: "卡洛特工作室 - 形象官方網站",
       description: "為卡洛特工作室打造的官方形象網站。採用現代化設計語法，結合流暢的動畫與響應式佈局，完美呈現代言品牌的專業形象。"
+    },
+    freezerShop: {
+      title: "Freezer Shop - 高端服飾形象網站",
+      description: "採用極簡主義設計的高端衣服購物網站。以黑白灰極簡風格打造，結合流暢的介面與 Next.js 技術，呈現代言品牌的前衛與純粹。"
     },
     switchLang: "English",
     contact: "聯絡我們",
