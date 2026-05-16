@@ -6,7 +6,7 @@ import { useLanguage } from '../../context/LanguageContext';
 import styles from './ContactPage.module.css';
 
 export default function ContactPage() {
-  const { t } = useLanguage() as any;
+  const { t } = useLanguage();
 
   return (
     <main className={styles.main}>
