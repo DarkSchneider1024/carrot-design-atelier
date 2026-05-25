@@ -31,6 +31,13 @@ export const translations = {
       title: "Freezer Shop - High-end Clothing Concept",
       description: "A premium minimalist clothing shopping website featuring a clean monochrome aesthetic and seamless user interface. Built with Next.js for maximum performance and elegance."
     },
+    servicesTitle: "Services",
+    sitemapTitle: "Sitemap",
+    address: "11F.-2, No. 65, Songde Rd., Xinyi Dist., Taipei City, Taiwan",
+    officeHours: "Monday to Friday AM 09:00 ~ PM 18:00",
+    closedDays: "Closed on Saturday and Sunday",
+    serviceItems: ["Brand Website Design", "E-commerce Development", "Custom APP Development", "UI/UX Interface Design", "SEO Optimization"],
+    sitemapItems: ["About Us", "Featured Works", "Services", "Contact Us"],
     switchLang: "中文",
     contact: "Contact Us",
     contactLine: "LINE ID",
