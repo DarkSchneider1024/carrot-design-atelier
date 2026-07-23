@@ -1,7 +1,7 @@
 export const translations = {
   en: {
     title: "Carrot Studio | Professional Website & App Development",
-    description: "Carrot Studio provides professional website construction, App production, and game development services. Featured works: Freezer Shop, FastOrder and PickUp.",
+    description: "Carrot Studio provides professional website construction, App production, and game development services. Featured works: Daily Mate, Freezer Shop, FastOrder and PickUp.",
     heroTitle: "CARROT STUDIO",
     heroChTitle: "Carrot Studio",
     tagline: "CREATIVE TECH STUDIO",
@@ -30,6 +30,10 @@ export const translations = {
     freezerShop: {
       title: "Freezer Shop - High-end Clothing Concept",
       description: "A premium minimalist clothing shopping website featuring a clean monochrome aesthetic and seamless user interface. Built with Next.js for maximum performance and elegance."
+    },
+    dailyMate: {
+      title: "Daily Mate - Lifestyle E-commerce Store",
+      description: "A live e-commerce platform offering curated lifestyle items with a clean modern aesthetic, seamless shopping cart, and order management."
     },
     servicesTitle: "Services",
     sitemapTitle: "Sitemap",
@@ -72,7 +76,7 @@ export const translations = {
   },
   zh: {
     title: "卡洛特工作室 | Carrot Studio - 專業網站與 App 製作",
-    description: "卡洛特工作室 (Carrot Studio) 提供專業的網站架設、App 製作、遊戲開發服務。精選作品展示：Freezer Shop、FastOrder 與 PickUp。",
+    description: "卡洛特工作室 (Carrot Studio) 提供專業的網站架設、App 製作、遊戲開發服務。精選作品展示：Daily Mate、Freezer Shop、FastOrder 與 PickUp。",
     heroTitle: "CARROT STUDIO",
     heroChTitle: "卡洛特工作室",
     tagline: "CREATIVE TECH STUDIO",
@@ -101,6 +105,10 @@ export const translations = {
     freezerShop: {
       title: "Freezer Shop - 高端服飾形象網站",
       description: "採用極簡主義設計的高端衣服購物網站。以黑白灰極簡風格打造，結合流暢的介面與 Next.js 技術，呈現代言品牌的前衛與純粹。"
+    },
+    dailyMate: {
+      title: "Daily Mate - 日常選物購物網站",
+      description: "實際營運與販售中之日常選物購物平台。採用極簡現代風設計，提供質感生活用品選購、流暢購物車與會員訂單管理流程。"
     },
     switchLang: "English",
     contact: "聯絡我們",

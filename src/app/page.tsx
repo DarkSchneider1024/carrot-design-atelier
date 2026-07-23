@@ -23,6 +23,13 @@ export default function Home() {
       tags: ["Next.js", "Branding"]
     },
     {
+      title: t.dailyMate.title,
+      description: t.dailyMate.description,
+      image: `${prefix}/images/daily_mate_jimmy.png`,
+      link: "https://daily-mate-flax.vercel.app/",
+      tags: ["Live Store", "E-commerce", "Next.js"]
+    },
+    {
       title: t.freezerShop.title,
       description: t.freezerShop.description,
       image: `${prefix}/images/freezer_shop_jimmy.png`,
