@@ -9,12 +9,13 @@ const Header: React.FC = () => {
   const { locale, setLocale, t } = useLanguage();
   const [scrolled, setScrolled] = useState(false);
   const [visible, setVisible] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
   const lastScrollY = useRef(0);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      
+
       // Check if scrolled past threshold for styling
       setScrolled(currentScrollY > 50);
 
@@ -28,7 +29,7 @@ const Header: React.FC = () => {
         // Scrolling up
         setVisible(true);
       }
-      
+
       lastScrollY.current = currentScrollY;
     };
 
@@ -40,30 +41,52 @@ const Header: React.FC = () => {
     setLocale(locale === 'zh' ? 'en' : 'zh');
   };
 
+  const navItems = [
+    { href: '/', label: t.navHome },
+    { href: '/links', label: t.navServices },
+    { href: '/games', label: t.navGames },
+    { href: '/articles', label: t.navArticles },
+    { href: '/contact', label: t.contact },
+  ];
+
   return (
     <header className={`
-      ${styles.header} 
-      ${scrolled ? styles.scrolled : ''} 
+      ${styles.header}
+      ${scrolled ? styles.scrolled : ''}
       ${!visible ? styles.hidden : ''}
+      ${menuOpen ? styles.menuOpen : ''}
     `}>
       <div className={styles.container}>
         <Link href="/" className={styles.logo}>
           <span className={styles.logoText}>CARROT</span>
           <span className={styles.logoDot}>.</span>
         </Link>
-        
-        <nav className={styles.nav}>
-          <Link href="/" className={styles.navLink}>
-            {t.navHome}
-          </Link>
-          <Link href="/links" className={styles.navLink}>
-            {t.navServices}
-          </Link>
-          <Link href="/contact" className={styles.navLink}>
-            {t.contact}
-          </Link>
-          <button 
-            onClick={toggleLanguage} 
+
+        <button
+          type="button"
+          className={styles.menuBtn}
+          onClick={() => setMenuOpen((open) => !open)}
+          aria-expanded={menuOpen}
+          aria-label="Menu"
+        >
+          <span className={styles.menuBar}></span>
+          <span className={styles.menuBar}></span>
+          <span className={styles.menuBar}></span>
+        </button>
+
+        <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ''}`}>
+          {navItems.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={styles.navLink}
+              onClick={() => setMenuOpen(false)}
+            >
+              {item.label}
+            </Link>
+          ))}
+          <button
+            onClick={toggleLanguage}
             className={styles.langBtn}
             aria-label="Toggle Language"
           >

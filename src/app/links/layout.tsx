@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: '服務項目 | Carrot Design Atelier',
-  description: '創立於 2026 年，Carrot Design Atelier 致力於將前衛科技與藝術感結合，為品牌打造超越時代的數位體驗。',
+  description: '在光影與代碼之間，Carrot Design Atelier 致力於將前衛科技與藝術感結合，為品牌打造超越時代的數位體驗。',
 };
 
 export default function LinksLayout({

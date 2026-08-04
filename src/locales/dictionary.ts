@@ -8,9 +8,13 @@ export const translations = {
     services: "Web Design / App Development / Game Development",
     showcaseTitle: "Featured Works Showcase",
     viewWork: "View Work →",
+    viewDetails: "About the Platform →",
+    viewJourney: "Dev Journey →",
     copyright: "All Rights Reserved.",
     navHome: "Home",
     navServices: "Services",
+    navGames: "Games",
+    navArticles: "Articles",
     fastOrder: {
       title: "FastOrder - Smart Ordering System",
       description: "A modern ordering platform designed for restaurants and group buying, providing a smooth user experience and powerful backend management. Supports multiple payment methods and real-time order tracking."
@@ -35,13 +39,17 @@ export const translations = {
       title: "Daily Mate - Lifestyle E-commerce Store",
       description: "A live e-commerce platform offering curated lifestyle items with a clean modern aesthetic, seamless shopping cart, and order management."
     },
+    carrotGames: {
+      title: "Carrot Games - Online Game Arena",
+      description: "A live pure front-end gaming lobby. No download required: play Xiangqi, Tetris Battle, Poker and Magic Fighter against smart AI or friends over real-time online rooms."
+    },
     servicesTitle: "Services",
     sitemapTitle: "Sitemap",
     address: "11F.-2, No. 65, Songde Rd., Xinyi Dist., Taipei City, Taiwan",
     officeHours: "Monday to Friday AM 09:00 ~ PM 18:00",
     closedDays: "Closed on Saturday and Sunday",
     serviceItems: ["Brand Website Design", "E-commerce Development", "Custom APP Development", "UI/UX Interface Design", "SEO Optimization"],
-    sitemapItems: ["About Us", "Featured Works", "Services", "Contact Us"],
+    sitemapItems: ["About Us", "Featured Works", "Services", "Carrot Games", "Tech Writing", "Contact Us"],
     switchLang: "中文",
     contact: "Contact Us",
     contactLine: "LINE ID",
@@ -66,13 +74,89 @@ export const translations = {
       placeholderMessage: "Describe your dream..."
     },
     linksTitle: "Services | Carrot Design Atelier",
-    linksHeroSlogan: "Redefining Aesthetics in the Pulse of 2026.",
+    linksHeroSlogan: "Where Light Meets Code, a New Aesthetic Begins.",
     linksHeroDesc: "We are not just developers; we are curators of the digital realm. Combining ultimate visual sensory with cutting-edge technology to give brands a vitality that transcends time and space.",
     linksService1: "Vision Reconstruction — Breaking mediocre digital boundaries through the language of design.",
     linksService2: "Soul Crafting — Transforming brand spirit into seamless interactive experiences.",
     linksService3: "Tech Resonance — Supporting infinite imagination of the future with high-performance full-stack technology.",
     linksContactSlogan: "Let us find resonance in the digital sea of stars.",
-    linksContactDesc: "Whether it's an innovative idea or deep transformation, we look forward to sketching the future with you."
+    linksContactDesc: "Whether it's an innovative idea or deep transformation, we look forward to sketching the future with you.",
+    gamesPage: {
+      metaTitle: "Carrot Games | Carrot Studio",
+      metaDescription: "Carrot Games is Carrot Studio's pure front-end online game lobby. No download needed — play Xiangqi, Tetris Battle, Texas Hold'em and Magic Fighter against AI or friends.",
+      badge: "No Download · Click and Play",
+      enTitle: "CARROT GAMES",
+      title: "Carrot Games",
+      subtitle: "Online Casual Battle Game Lobby",
+      description: "Built and operated by Carrot Studio. No app install required — open the page and enjoy smooth matches, smart AI sparring partners and cross-platform online rooms with friends.",
+      cta: "Enter Carrot Games",
+      ctaHint: "Opens games.carrot-atelier.online in a new tab",
+      previewAlt: "Carrot Games lobby preview",
+      lineupTitle: "Game Lineup",
+      lineupSubtitle: "4 titles available now, more on the way.",
+      games: [
+        {
+          name: "Xiangqi",
+          category: "Board Battle",
+          description: "Tactical attack and defense across the river. Comes with a high-IQ AI sparring partner and online play with friends."
+        },
+        {
+          name: "Tetris Battle 2P",
+          category: "Puzzle Arcade",
+          description: "The classic 2-minute duel. A test of reflexes and clearing skill, with K.O. knockouts and counter-attacks."
+        },
+        {
+          name: "Texas Hold'em",
+          category: "Poker",
+          description: "Mind games and chip showdowns. Play against cute AI opponents or open a private room for friends."
+        },
+        {
+          name: "Magic Fighter",
+          category: "3D Air Combat",
+          description: "Carrying the soul of the classic Battle City, reborn as a magic-fighter dogfight defending the Carrot Crystal base."
+        }
+      ],
+      featuresTitle: "Platform Highlights",
+      features: [
+        {
+          title: "Zero Install",
+          description: "Pure front-end architecture. Open the browser and play instantly — and add it to your home screen like an app if you want."
+        },
+        {
+          title: "Smart AI Sparring",
+          description: "Every title ships with an AI opponent, so a solo player never has to wait for a match."
+        },
+        {
+          title: "Real-time Online Rooms",
+          description: "Open a room and share it — friends join across platforms for an instant match."
+        },
+        {
+          title: "Lobby Chat",
+          description: "A live lobby channel where players chat, call for opponents and team up."
+        }
+      ],
+      outroTitle: "Ready for a match?",
+      outroDescription: "The lobby is open around the clock. Pick a game, invite a friend, and start playing right in your browser.",
+      outroCta: "Play Now"
+    },
+    articlesPage: {
+      metaTitle: "Tech Writing | Carrot Studio",
+      metaDescription: "The 2026 iThome Ironman Contest series by Carrot Studio: building a heterogeneous data analytics platform with K8S + GitOps — the making of Wafer BI.",
+      badge: "2026 iThome Ironman Contest",
+      enTitle: "TECH WRITING",
+      title: "Tech Writing",
+      description: "We write down what we build. This series documents, day by day, how the Wafer BI engineering analytics platform was designed and shipped.",
+      seriesTitle: "From Zero to One: Building a Heterogeneous Data Analytics Platform with K8S + GitOps",
+      seriesDescription: "A 30-day series walking through the Wafer BI project: why the stack was chosen, how Java, Python and React work together, and how K8S with GitOps holds the platform up.",
+      seriesAuthor: "Author: carrot771024 (Carrot Studio)",
+      seriesStatus: "Ongoing",
+      viewSeries: "View the full series on iThome →",
+      listTitle: "Articles",
+      readArticle: "Read →",
+      relatedTitle: "The project behind the series",
+      relatedDescription: "Wafer BI is the engineering BI platform this series is built around — a large-scale data analytics stack running on K8S and Delta Lake.",
+      relatedCta: "Visit Wafer BI →"
+    }
   },
   zh: {
     title: "卡洛特工作室 | Carrot Studio - 專業網站與 App 製作",
@@ -83,9 +167,13 @@ export const translations = {
     services: "網站架設 / App製作 / 遊戲製作",
     showcaseTitle: "精選作品 Showcase",
     viewWork: "查看作品 →",
+    viewDetails: "平台介紹 →",
+    viewJourney: "開發歷程 →",
     copyright: "版權所有。",
     navHome: "首頁",
     navServices: "服務項目",
+    navGames: "遊戲網",
+    navArticles: "技術文章",
     fastOrder: {
       title: "FastOrder - 智能點餐系統",
       description: "為餐廳與團購設計的現代化點餐平台，提供流暢的用戶體驗與強大的後台管理功能。支持多種支付方式與實時訂單追蹤。"
@@ -110,6 +198,10 @@ export const translations = {
       title: "Daily Mate - 日常選物購物網站",
       description: "實際營運與販售中之日常選物購物平台。採用極簡現代風設計，提供質感生活用品選購、流暢購物車與會員訂單管理流程。"
     },
+    carrotGames: {
+      title: "卡洛特遊戲網 - 線上對戰遊戲大廳",
+      description: "實際上線營運中的純前端遊戲大廳。免下載即可遊玩中國象棋、俄羅斯方塊對戰、德州撲克與魔法對戰，支援高智能 AI 陪練與好友即時連線開房。"
+    },
     switchLang: "English",
     contact: "聯絡我們",
     contactLine: "LINE ID",
@@ -125,7 +217,7 @@ export const translations = {
     officeHours: "週一至週五 AM 09:00 ~ PM 18:00",
     closedDays: "週六、週日公休",
     serviceItems: ["形象網站設計", "購物網站建置", "APP 客製開發", "UI/UX 介面設計", "SEO 搜尋優化"],
-    sitemapItems: ["關於我們", "精選作品", "服務項目", "聯絡我們"],
+    sitemapItems: ["關於我們", "精選作品", "服務項目", "卡洛特遊戲網", "技術文章", "聯絡我們"],
     form: {
       name: "身分名稱",
       email: "電子信箱",
@@ -141,13 +233,89 @@ export const translations = {
       placeholderMessage: "請描述您的夢想與藍圖..."
     },
     linksTitle: "服務項目 | Carrot Design Atelier",
-    linksHeroSlogan: "在光影與代碼之間，預見 2026 的美學定義。",
+    linksHeroSlogan: "在光影與代碼之間，預見下一種美學的定義。",
     linksHeroDesc: "我們不只是開發者，更是數位世界的策展人。結合極致的視覺感官與最前衛的技術，為品牌賦予跨越時空的生命力。",
     linksService1: "視界重構 — 用設計的語言，打破平庸的數位邊界。",
     linksService2: "靈魂鑄造 — 將品牌精神轉化為流暢的互動體驗。",
     linksService3: "技術共鳴 — 以高效能全端技術，撐起對未來的無限想像。",
     linksContactSlogan: "讓我們在數位的星海中，找到共鳴。",
-    linksContactDesc: "無論是創新的點子或深度的轉型，期待與您一同勾勒未來。"
+    linksContactDesc: "無論是創新的點子或深度的轉型，期待與您一同勾勒未來。",
+    gamesPage: {
+      metaTitle: "卡洛特遊戲網 | Carrot Studio",
+      metaDescription: "卡洛特遊戲網（Carrot Games）是卡洛特工作室打造的純前端線上遊戲大廳。免下載即可遊玩中國象棋、俄羅斯方塊對戰、德州撲克與魔法對戰，支援 AI 陪練與好友連線。",
+      badge: "免下載 · 點擊即玩",
+      enTitle: "CARROT GAMES",
+      title: "卡洛特遊戲網",
+      subtitle: "線上休閒對戰遊戲大廳",
+      description: "由卡洛特工作室自行開發與營運。無需安裝任何 App，開啟網頁即可享受流暢對戰、智慧 AI 陪練與好友跨平台連線！",
+      cta: "前往卡洛特遊戲網",
+      ctaHint: "將於新分頁開啟 games.carrot-atelier.online",
+      previewAlt: "卡洛特遊戲網大廳畫面預覽",
+      lineupTitle: "遊戲陣容",
+      lineupSubtitle: "目前共 4 款遊戲上線，持續增加中。",
+      games: [
+        {
+          name: "中國象棋",
+          category: "棋牌對戰",
+          description: "楚河漢界戰術攻防！提供高智能 AI 陪練與線上好友連線對弈。"
+        },
+        {
+          name: "俄羅斯方塊對戰",
+          category: "益智街機",
+          description: "經典 2 分鐘對決！考驗反應與消除技巧，支援 K.O. 擊倒與反制攻擊。"
+        },
+        {
+          name: "德州撲克",
+          category: "撲克娛樂",
+          description: "心理博弈與籌碼決戰！支援可愛 AI 電腦對決與好友連線開房。"
+        },
+        {
+          name: "魔法對戰",
+          category: "3D 動作空戰",
+          description: "傳承經典《坦克大戰》靈魂！重塑為魔法戰機空戰對決，保護蘿蔔水晶基地。"
+        }
+      ],
+      featuresTitle: "平台特色",
+      features: [
+        {
+          title: "免安裝即開即玩",
+          description: "純前端架構，打開瀏覽器就能玩；也可加入手機主畫面，像 App 一樣使用。"
+        },
+        {
+          title: "智慧 AI 陪練",
+          description: "每款遊戲皆內建 AI 對手，一個人也能隨時開一局，不必等待配對。"
+        },
+        {
+          title: "即時連線開房",
+          description: "建立房間分享給好友，跨平台加入即可立刻開戰。"
+        },
+        {
+          title: "大廳玩家頻道",
+          description: "內建即時聊天大廳，隨時揪人、閒聊、找對手一起同樂。"
+        }
+      ],
+      outroTitle: "準備好來一局了嗎？",
+      outroDescription: "遊戲大廳全天候開放，挑一款遊戲、找個朋友，打開瀏覽器就能開始。",
+      outroCta: "立即開始遊玩"
+    },
+    articlesPage: {
+      metaTitle: "技術文章 | Carrot Studio",
+      metaDescription: "卡洛特工作室參加 2026 iThome 鐵人賽的系列文：從零到一，使用 K8S + GitOps 打造異構技術棧的資料分析平台，完整記錄 Wafer BI 的製作歷程。",
+      badge: "2026 iThome 鐵人賽",
+      enTitle: "TECH WRITING",
+      title: "技術文章",
+      description: "我們把做過的東西寫下來。這個系列以每日連載的方式，完整記錄 Wafer BI 工程分析平台從設計到上線的過程。",
+      seriesTitle: "從零到一：使用 K8S + GitOps 打造異構技術棧的資料分析平台",
+      seriesDescription: "為期 30 天的系列文，從 Wafer BI 的專案背景與技術選型談起，一路走過 Java、Python 與 React 的異構協作，以及 K8S 搭配 GitOps 如何撐起整個平台。",
+      seriesAuthor: "作者：carrot771024（卡洛特工作室）",
+      seriesStatus: "連載中",
+      viewSeries: "前往 iThome 查看完整系列 →",
+      listTitle: "系列文章",
+      readArticle: "閱讀文章 →",
+      relatedTitle: "系列文背後的作品",
+      relatedDescription: "Wafer BI 就是這個系列文所圍繞的工程 BI 分析平台，運用 K8S 與 Delta Lake 實現大規模資料分析。",
+      relatedCta: "查看 Wafer BI →"
+    }
   }
 };
 

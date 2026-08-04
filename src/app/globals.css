@@ -16,11 +16,13 @@
   margin: 0;
 }
 
+/* Note: no `height: 100%` here — it would size the body to the viewport and turn
+   the body into the scroll container, which breaks window scroll listeners.
+   The sticky footer comes from the flex column + min-height on <body> in layout.tsx. */
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  height: 100%;
 }
 
 body {

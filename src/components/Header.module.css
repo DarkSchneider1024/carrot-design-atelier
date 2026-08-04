@@ -52,6 +52,42 @@
   gap: 2rem;
 }
 
+/* Hamburger — hidden on desktop */
+.menuBtn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.menuBar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  margin: 0 auto;
+  background: #1a1a1a;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menuOpen .menuBar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.menuOpen .menuBar:nth-child(2) {
+  opacity: 0;
+}
+
+.menuOpen .menuBar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
 .navLink {
   text-decoration: none;
   color: #1a1a1a;
@@ -114,16 +150,53 @@
   letter-spacing: 0.5px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .header {
     padding: 0 1.5rem;
   }
-  
-  .logoText {
+
+  .menuOpen {
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(15px);
+  }
+
+  .menuBtn {
+    display: flex;
+  }
+
+  /* Nav collapses into a dropdown panel under the header bar */
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 0 1.5rem;
+    max-height: 0;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    transition: max-height 0.4s ease, padding 0.4s ease;
+  }
+
+  .navOpen {
+    max-height: 420px;
+    padding: 0.5rem 1.5rem 1.5rem;
+  }
+
+  .navLink {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  }
+
+  .navLink::after {
     display: none;
   }
 
-  .nav {
-    gap: 1rem;
+  .langBtn {
+    align-self: flex-start;
+    margin-top: 1.25rem;
   }
 }

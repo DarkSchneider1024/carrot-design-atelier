@@ -54,6 +54,11 @@
   -webkit-text-fill-color: transparent;
 }
 
+/* Each clause on its own line, so CJK never breaks mid-phrase */
+.sloganLine {
+  display: block;
+}
+
 .description {
   font-size: 1.25rem;
   max-width: 700px;

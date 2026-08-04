@@ -1,6 +1,7 @@
 'use client';
 
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.css";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -14,13 +15,33 @@ export default function Home() {
     ? "/carrot-design-atelier" 
     : "";
 
-  const projects = [
+  type Project = {
+    title: string;
+    description: string;
+    image: string;
+    link: string;
+    tags: string[];
+    // Optional secondary link to a page on this site (platform intro, dev journey, ...)
+    detailLink?: string;
+    detailLabel?: string;
+  };
+
+  const projects: Project[] = [
     {
       title: t.atelier.title,
       description: t.atelier.description,
       image: `${prefix}/images/atelier_jimmy.png`,
       link: "#",
       tags: ["Next.js", "Branding"]
+    },
+    {
+      title: t.carrotGames.title,
+      description: t.carrotGames.description,
+      image: `${prefix}/images/carrot_games.png`,
+      link: "https://games.carrot-atelier.online/",
+      tags: ["Live Platform", "Game", "Realtime"],
+      detailLink: "/games",
+      detailLabel: t.viewDetails
     },
     {
       title: t.dailyMate.title,
@@ -41,7 +62,9 @@ export default function Home() {
       description: t.waferBI.description,
       image: `${prefix}/images/wafer_bi_jimmy.png`,
       link: "https://wafer.carrot-atelier.online/",
-      tags: ["K8S", "Delta Lake"]
+      tags: ["K8S", "Delta Lake"],
+      detailLink: "/articles",
+      detailLabel: t.viewJourney
     },
     {
       title: t.fastOrder.title,
@@ -115,14 +138,21 @@ export default function Home() {
                       ))}
                     </div>
                   )}
-                  <a 
-                    href={project.link} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className={styles.cardLink}
-                  >
-                    {t.viewWork}
-                  </a>
+                  <div className={styles.cardActions}>
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.cardLink}
+                    >
+                      {t.viewWork}
+                    </a>
+                    {project.detailLink && (
+                      <Link href={project.detailLink} className={styles.cardDetailLink}>
+                        {project.detailLabel}
+                      </Link>
+                    )}
+                  </div>
                 </div>
               </div>
             ))}

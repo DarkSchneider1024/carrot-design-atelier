@@ -37,7 +37,12 @@ export default function LinksPage() {
         <div className={styles.heroOverlay}></div>
         
         <div className={styles.heroContent}>
-          <h1 className={`${styles.slogan} fade-in`}>{t.linksHeroSlogan}</h1>
+          <h1 className={`${styles.slogan} fade-in`}>
+            {/* Split after each comma so the slogan wraps on its clauses */}
+            {t.linksHeroSlogan.split(/(?<=[，,])\s*/).map((clause, i) => (
+              <span key={i} className={styles.sloganLine}>{clause}</span>
+            ))}
+          </h1>
           <p className={`${styles.description} fade-in`} style={{ animationDelay: '0.2s' }}>
             {t.linksHeroDesc}
           </p>
