@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
               let href = "/";
               if (i === 0) href = "/links"; // About Us
               if (i === 1) href = "/#works"; // Featured Works
-              if (i === 2) href = "/links"; // Service Items
+              if (i === 2) href = "/links#services"; // Service Items
               if (i === 3) href = "/games"; // Carrot Games
               if (i === 4) href = "/articles"; // Tech Writing
               if (i === 5) href = "/contact"; // Contact Us

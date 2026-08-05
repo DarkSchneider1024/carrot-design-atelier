@@ -19,6 +19,10 @@ export default function LinksPage() {
     {
       title: t.linksService3.split(' — ')[0],
       desc: t.linksService3.split(' — ')[1]
+    },
+    {
+      title: t.linksService4.split(' — ')[0],
+      desc: t.linksService4.split(' — ')[1]
     }
   ];
 
@@ -43,13 +47,16 @@ export default function LinksPage() {
               <span key={i} className={styles.sloganLine}>{clause}</span>
             ))}
           </h1>
-          <p className={`${styles.description} fade-in`} style={{ animationDelay: '0.2s' }}>
+          <p className={`${styles.aboutText} fade-in`} style={{ animationDelay: '0.2s' }}>
+            {t.linksAboutText}
+          </p>
+          <p className={`${styles.description} fade-in`} style={{ animationDelay: '0.3s' }}>
             {t.linksHeroDesc}
           </p>
         </div>
       </section>
 
-      <section className={styles.contentSection}>
+      <section id="services" className={styles.contentSection}>
         <div className="container">
           <div className={styles.servicesGrid}>
             {services.map((service, index) => (

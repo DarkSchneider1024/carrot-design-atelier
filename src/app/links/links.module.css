@@ -7,7 +7,8 @@
 
 .hero {
   position: relative;
-  height: 70vh;
+  min-height: 70vh;
+  padding: 6rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,6 +58,16 @@
 /* Each clause on its own line, so CJK never breaks mid-phrase */
 .sloganLine {
   display: block;
+}
+
+.aboutText {
+  font-size: 1.35rem;
+  max-width: 760px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.9;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  opacity: 0.95;
 }
 
 .description {
@@ -188,11 +199,16 @@
 
 @media (max-width: 768px) {
   .hero {
-    height: 60vh;
+    min-height: 60vh;
+    padding: 4rem 0;
   }
   
   .slogan {
     font-size: 2.5rem;
+  }
+
+  .aboutText {
+    font-size: 1.1rem;
   }
 
   .contactBox {

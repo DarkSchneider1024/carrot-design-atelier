@@ -73,12 +73,14 @@ export const translations = {
       placeholderSubject: "What shall we discuss?",
       placeholderMessage: "Describe your dream..."
     },
-    linksTitle: "Services | Carrot Design Atelier",
-    linksHeroSlogan: "Where Light Meets Code, a New Aesthetic Begins.",
+    linksTitle: "About Us | Carrot Design Atelier",
+    linksHeroSlogan: "About Carrot Studio",
+    linksAboutText: "Founded in 2026, Carrot Studio is dedicated to bringing digital technology and humanistic aesthetics together. We believe good design should never be just a tool — it is an extension of a way of living.",
     linksHeroDesc: "We are not just developers; we are curators of the digital realm. Combining ultimate visual sensory with cutting-edge technology to give brands a vitality that transcends time and space.",
     linksService1: "Vision Reconstruction — Breaking mediocre digital boundaries through the language of design.",
     linksService2: "Soul Crafting — Transforming brand spirit into seamless interactive experiences.",
     linksService3: "Tech Resonance — Supporting infinite imagination of the future with high-performance full-stack technology.",
+    linksService4: "Web / App / Game Development — From brand sites and e-commerce platforms to mobile apps and online games, we cover planning, design and development end to end.",
     linksContactSlogan: "Let us find resonance in the digital sea of stars.",
     linksContactDesc: "Whether it's an innovative idea or deep transformation, we look forward to sketching the future with you.",
     gamesPage: {
@@ -232,12 +234,14 @@ export const translations = {
       placeholderSubject: "我們將探討什麼？",
       placeholderMessage: "請描述您的夢想與藍圖..."
     },
-    linksTitle: "服務項目 | Carrot Design Atelier",
-    linksHeroSlogan: "在光影與代碼之間，預見下一種美學的定義。",
+    linksTitle: "關於我們 | Carrot Design Atelier",
+    linksHeroSlogan: "關於卡洛特工作室",
+    linksAboutText: "卡洛特工作室成立於 2026 年，致力於將數位技術與人文美學結合。我們相信，好的設計不應只是工具，而一種生活方式的延伸。",
     linksHeroDesc: "我們不只是開發者，更是數位世界的策展人。結合極致的視覺感官與最前衛的技術，為品牌賦予跨越時空的生命力。",
     linksService1: "視界重構 — 用設計的語言，打破平庸的數位邊界。",
     linksService2: "靈魂鑄造 — 將品牌精神轉化為流暢的互動體驗。",
     linksService3: "技術共鳴 — 以高效能全端技術，撐起對未來的無限想像。",
+    linksService4: "網站架設 / App製作 / 遊戲製作 — 從形象官網、購物平台到行動應用與線上遊戲，企劃、設計到開發一站式完成。",
     linksContactSlogan: "讓我們在數位的星海中，找到共鳴。",
     linksContactDesc: "無論是創新的點子或深度的轉型，期待與您一同勾勒未來。",
     gamesPage: {
