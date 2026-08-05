@@ -53,7 +53,12 @@ export default function GamesPage() {
               {g.ctaHint}
             </p>
           </div>
+        </div>
+      </section>
 
+      {/* Preview, lifted over the hero seam */}
+      <section className={styles.previewSection}>
+        <div className="container">
           <a
             href={GAMES_URL}
             target="_blank"

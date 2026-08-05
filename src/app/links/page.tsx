@@ -29,29 +29,21 @@ export default function LinksPage() {
   return (
     <main className={styles.main}>
       <section className={styles.hero}>
-        <video 
+        <video
           className={styles.videoBackground}
-          autoPlay 
-          muted 
-          loop 
+          autoPlay
+          muted
+          loop
           playsInline
         >
           <source src="/videos/carrot_design_atelier.mp4" type="video/mp4" />
         </video>
         <div className={styles.heroOverlay}></div>
-        
+
         <div className={styles.heroContent}>
-          <h1 className={`${styles.slogan} fade-in`}>
-            {/* Split after each comma so the slogan wraps on its clauses */}
-            {t.linksHeroSlogan.split(/(?<=[，,])\s*/).map((clause, i) => (
-              <span key={i} className={styles.sloganLine}>{clause}</span>
-            ))}
-          </h1>
-          <p className={`${styles.aboutText} fade-in`} style={{ animationDelay: '0.2s' }}>
-            {t.linksAboutText}
-          </p>
-          <p className={`${styles.description} fade-in`} style={{ animationDelay: '0.3s' }}>
-            {t.linksHeroDesc}
+          <h1 className={`${styles.slogan} fade-in`}>{t.servicesHeroTitle}</h1>
+          <p className={`${styles.description} fade-in`} style={{ animationDelay: '0.2s' }}>
+            {t.servicesHeroDesc}
           </p>
         </div>
       </section>

@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '關於我們 | Carrot Design Atelier',
-  description: '卡洛特工作室成立於 2026 年，致力於將數位技術與人文美學結合。提供網站架設、App 製作與遊戲製作等一站式數位服務。',
+  title: '服務項目 | Carrot Design Atelier',
+  description: '卡洛特工作室提供網站架設、App 製作與遊戲製作等一站式數位服務，從品牌形象到產品上線，企劃、設計與開發全程包辦。',
 };
 
 export default function LinksLayout({

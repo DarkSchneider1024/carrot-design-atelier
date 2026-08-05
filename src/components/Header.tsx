@@ -43,7 +43,8 @@ const Header: React.FC = () => {
 
   const navItems = [
     { href: '/', label: t.navHome },
-    { href: '/links#services', label: t.navServices },
+    { href: '/about', label: t.navAbout },
+    { href: '/links', label: t.navServices },
     { href: '/games', label: t.navGames },
     { href: '/articles', label: t.navArticles },
     { href: '/contact', label: t.contact },

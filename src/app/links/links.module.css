@@ -7,7 +7,7 @@
 
 .hero {
   position: relative;
-  min-height: 70vh;
+  min-height: 55vh;
   padding: 6rem 0;
   display: flex;
   align-items: center;
@@ -55,21 +55,6 @@
   -webkit-text-fill-color: transparent;
 }
 
-/* Each clause on its own line, so CJK never breaks mid-phrase */
-.sloganLine {
-  display: block;
-}
-
-.aboutText {
-  font-size: 1.35rem;
-  max-width: 760px;
-  margin: 0 auto 1.5rem;
-  line-height: 1.9;
-  font-weight: 300;
-  letter-spacing: 0.02em;
-  opacity: 0.95;
-}
-
 .description {
   font-size: 1.25rem;
   max-width: 700px;
@@ -84,9 +69,10 @@
   padding: 8rem 0;
 }
 
+/* Two columns on desktop so the four cards sit as an even 2×2 block */
 .servicesGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
   gap: 3rem;
 }
 
@@ -205,10 +191,6 @@
   
   .slogan {
     font-size: 2.5rem;
-  }
-
-  .aboutText {
-    font-size: 1.1rem;
   }
 
   .contactBox {
