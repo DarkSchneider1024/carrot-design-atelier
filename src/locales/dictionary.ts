@@ -15,6 +15,7 @@ export const translations = {
     navAbout: "About Us",
     navServices: "Services",
     navGames: "Games",
+    navShop: "Shop",
     navArticles: "Articles",
     fastOrder: {
       title: "FastOrder - Smart Ordering System",
@@ -50,7 +51,7 @@ export const translations = {
     officeHours: "Monday to Friday AM 09:00 ~ PM 18:00",
     closedDays: "Closed on Saturday and Sunday",
     serviceItems: ["Brand Website Design", "E-commerce Development", "Custom APP Development", "UI/UX Interface Design", "SEO Optimization"],
-    sitemapItems: ["About Us", "Featured Works", "Services", "Carrot Games", "Tech Writing", "Contact Us"],
+    sitemapItems: ["About Us", "Featured Works", "Services", "Carrot Games", "Daily Mate Shop", "Tech Writing", "Contact Us"],
     switchLang: "中文",
     contact: "Contact Us",
     contactLine: "LINE ID",
@@ -178,6 +179,7 @@ export const translations = {
     navAbout: "關於我們",
     navServices: "服務項目",
     navGames: "遊戲網",
+    navShop: "購物網",
     navArticles: "技術文章",
     fastOrder: {
       title: "FastOrder - 智能點餐系統",
@@ -222,7 +224,7 @@ export const translations = {
     officeHours: "週一至週五 AM 09:00 ~ PM 18:00",
     closedDays: "週六、週日公休",
     serviceItems: ["形象網站設計", "購物網站建置", "APP 客製開發", "UI/UX 介面設計", "SEO 搜尋優化"],
-    sitemapItems: ["關於我們", "精選作品", "服務項目", "卡洛特遊戲網", "技術文章", "聯絡我們"],
+    sitemapItems: ["關於我們", "精選作品", "服務項目", "卡洛特遊戲網", "Daily Mate 購物網", "技術文章", "聯絡我們"],
     form: {
       name: "身分名稱",
       email: "電子信箱",

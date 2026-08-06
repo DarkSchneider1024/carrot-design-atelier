@@ -5,6 +5,17 @@ import Link from 'next/link';
 import styles from './Footer.module.css';
 import { useLanguage } from '@/context/LanguageContext';
 
+// Kept in the same order as t.sitemapItems in every locale.
+const sitemapLinks: { href: string; external?: boolean }[] = [
+  { href: "/about" },                                                    // About Us
+  { href: "/#works" },                                                   // Featured Works
+  { href: "/links" },                                                    // Service Items
+  { href: "/games" },                                                    // Carrot Games
+  { href: "https://daily-mate.carrot-atelier.online/", external: true }, // Daily Mate Shop
+  { href: "/articles" },                                                 // Tech Writing
+  { href: "/contact" },                                                  // Contact Us
+];
+
 const Footer: React.FC = () => {
   const { t } = useLanguage();
   const currentYear = new Date().getFullYear();
@@ -50,17 +61,22 @@ const Footer: React.FC = () => {
           <h4 className={styles.columnTitle}>{t.sitemapTitle}</h4>
           <ul className={styles.linkList}>
             {t.sitemapItems.map((item: string, i: number) => {
-              let href = "/";
-              if (i === 0) href = "/about"; // About Us
-              if (i === 1) href = "/#works"; // Featured Works
-              if (i === 2) href = "/links"; // Service Items
-              if (i === 3) href = "/games"; // Carrot Games
-              if (i === 4) href = "/articles"; // Tech Writing
-              if (i === 5) href = "/contact"; // Contact Us
+              const target = sitemapLinks[i] ?? { href: "/" };
 
               return (
                 <li key={i}>
-                  <Link href={href} className={styles.footerLink}>{item}</Link>
+                  {target.external ? (
+                    <a
+                      href={target.href}
+                      className={styles.footerLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {item}
+                    </a>
+                  ) : (
+                    <Link href={target.href} className={styles.footerLink}>{item}</Link>
+                  )}
                 </li>
               );
             })}

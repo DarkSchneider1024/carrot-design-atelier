@@ -46,6 +46,7 @@ const Header: React.FC = () => {
     { href: '/about', label: t.navAbout },
     { href: '/links', label: t.navServices },
     { href: '/games', label: t.navGames },
+    { href: 'https://daily-mate.carrot-atelier.online/', label: t.navShop, external: true },
     { href: '/articles', label: t.navArticles },
     { href: '/contact', label: t.contact },
   ];
@@ -76,16 +77,29 @@ const Header: React.FC = () => {
         </button>
 
         <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ''}`}>
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={styles.navLink}
-              onClick={() => setMenuOpen(false)}
-            >
-              {item.label}
-            </Link>
-          ))}
+          {navItems.map((item) =>
+            item.external ? (
+              <a
+                key={item.href}
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.navLink}
+                onClick={() => setMenuOpen(false)}
+              >
+                {item.label}
+              </a>
+            ) : (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={styles.navLink}
+                onClick={() => setMenuOpen(false)}
+              >
+                {item.label}
+              </Link>
+            )
+          )}
           <button
             onClick={toggleLanguage}
             className={styles.langBtn}

@@ -47,7 +47,7 @@ export default function Home() {
       title: t.dailyMate.title,
       description: t.dailyMate.description,
       image: `${prefix}/images/daily_mate_jimmy.png`,
-      link: "https://daily-mate-flax.vercel.app/",
+      link: "https://daily-mate.carrot-atelier.online/",
       tags: ["Live Store", "E-commerce", "Next.js"]
     },
     {
