@@ -38,7 +38,7 @@ export default function Home() {
       title: t.web3Game.title,
       description: t.web3Game.description,
       image: `${prefix}/images/web3_game.jpg`,
-      link: "https://web3-0-game.vercel.app/",
+      link: "https://nft.carrot-atelier.online/",
       tags: ["Web3.0", "NFT", "ERC-721", "Game"]
     },
     {

@@ -11,7 +11,7 @@ const sitemapLinks: { href: string; external?: boolean }[] = [
   { href: "/#works" },                                                   // Featured Works
   { href: "/links" },                                                    // Service Items
   { href: "/games" },                                                    // Carrot Games
-  { href: "https://web3-0-game.vercel.app/", external: true },          // Wind's Origin (Web3 NFT)
+  { href: "https://nft.carrot-atelier.online/", external: true },          // Wind's Origin (Web3 NFT)
   { href: "https://daily-mate.carrot-atelier.online/", external: true }, // Daily Mate Shop
   { href: "/articles" },                                                 // Tech Writing
   { href: "/contact" },                                                  // Contact Us
