@@ -35,6 +35,13 @@ export default function Home() {
       tags: ["Next.js", "Branding"]
     },
     {
+      title: t.web3Game.title,
+      description: t.web3Game.description,
+      image: `${prefix}/images/web3_game.jpg`,
+      link: "https://web3-0-game.vercel.app/",
+      tags: ["Web3.0", "NFT", "ERC-721", "Game"]
+    },
+    {
       title: t.carrotGames.title,
       description: t.carrotGames.description,
       image: `${prefix}/images/carrot_games.png`,

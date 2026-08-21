@@ -5,7 +5,7 @@ export const translations = {
     heroTitle: "CARROT STUDIO",
     heroChTitle: "Carrot Studio",
     tagline: "CREATIVE TECH STUDIO",
-    services: "Web Design / App Development / Game Development",
+    services: "Web Design / App Development / Game Development / Web3 & NFT",
     showcaseTitle: "Featured Works Showcase",
     viewWork: "View Work →",
     viewDetails: "About the Platform →",
@@ -15,11 +15,16 @@ export const translations = {
     navAbout: "About Us",
     navServices: "Services",
     navGames: "Games",
+    navWeb3: "Web3 NFT",
     navShop: "Shop",
     navArticles: "Articles",
     fastOrder: {
       title: "FastOrder - Smart Ordering System",
       description: "A modern ordering platform designed for restaurants and group buying, providing a smooth user experience and powerful backend management. Supports multiple payment methods and real-time order tracking."
+    },
+    web3Game: {
+      title: "Wind's Origin - Web3.0 NFT Card Game",
+      description: "A Web3.0 / Web 2.5 fantasy card gacha and collection game. Features millisecond-level off-chain gacha combined with on-chain ERC-721 NFT minting into crypto wallets, complete with IPFS metadata verification and Ichiban Kuji prize mechanics."
     },
     pickUp: {
       title: "PickUp - Shopping Website",
@@ -50,8 +55,8 @@ export const translations = {
     address: "11F.-2, No. 65, Songde Rd., Xinyi Dist., Taipei City, Taiwan",
     officeHours: "Monday to Friday AM 09:00 ~ PM 18:00",
     closedDays: "Closed on Saturday and Sunday",
-    serviceItems: ["Brand Website Design", "E-commerce Development", "Custom APP Development", "UI/UX Interface Design", "SEO Optimization"],
-    sitemapItems: ["About Us", "Featured Works", "Services", "Carrot Games", "Daily Mate Shop", "Tech Writing", "Contact Us"],
+    serviceItems: ["Brand Website Design", "E-commerce Development", "Custom APP Development", "Web3 & NFT Development", "UI/UX Interface Design", "SEO Optimization"],
+    sitemapItems: ["About Us", "Featured Works", "Services", "Carrot Games", "Wind's Origin (Web3 NFT)", "Daily Mate Shop", "Tech Writing", "Contact Us"],
     switchLang: "中文",
     contact: "Contact Us",
     contactLine: "LINE ID",
@@ -83,7 +88,7 @@ export const translations = {
     linksService1: "Vision Reconstruction — Breaking mediocre digital boundaries through the language of design.",
     linksService2: "Soul Crafting — Transforming brand spirit into seamless interactive experiences.",
     linksService3: "Tech Resonance — Supporting infinite imagination of the future with high-performance full-stack technology.",
-    linksService4: "Web / App / Game Development — From brand sites and e-commerce platforms to mobile apps and online games, we cover planning, design and development end to end.",
+    linksService4: "Web / App / Game / Web3 Development — From brand sites and e-commerce platforms to Web3 NFT games and mobile apps, we cover planning, design and development end to end.",
     linksContactSlogan: "Let us find resonance in the digital sea of stars.",
     linksContactDesc: "Whether it's an innovative idea or deep transformation, we look forward to sketching the future with you.",
     gamesPage: {
@@ -165,11 +170,11 @@ export const translations = {
   },
   zh: {
     title: "卡洛特工作室 | Carrot Studio - 專業網站與 App 製作",
-    description: "卡洛特工作室 (Carrot Studio) 提供專業的網站架設、App 製作、遊戲開發服務。精選作品展示：Daily Mate、Freezer Shop、FastOrder 與 PickUp。",
+    description: "卡洛特工作室 (Carrot Studio) 提供專業的網站架設、App 製作、遊戲與 Web3 NFT 開發服務。精選作品展示：風之曦原 (Web3 NFT 遊戲)、Daily Mate、Freezer Shop、FastOrder 與 PickUp。",
     heroTitle: "CARROT STUDIO",
     heroChTitle: "卡洛特工作室",
     tagline: "CREATIVE TECH STUDIO",
-    services: "網站架設 / App製作 / 遊戲製作",
+    services: "網站架設 / App製作 / 遊戲製作 / Web3與NFT開發",
     showcaseTitle: "精選作品 Showcase",
     viewWork: "查看作品 →",
     viewDetails: "平台介紹 →",
@@ -179,11 +184,16 @@ export const translations = {
     navAbout: "關於我們",
     navServices: "服務項目",
     navGames: "遊戲網",
+    navWeb3: "Web3 NFT",
     navShop: "購物網",
     navArticles: "技術文章",
     fastOrder: {
       title: "FastOrder - 智能點餐系統",
       description: "為餐廳與團購設計的現代化點餐平台，提供流暢的用戶體驗與強大的後台管理功能。支持多種支付方式與實時訂單追蹤。"
+    },
+    web3Game: {
+      title: "風之曦原 - Web3.0 NFT 抽卡遊戲",
+      description: "主打 Web 3.0 / Web 2.5 混合架構的奇幻繪本風抽卡遊戲。結合中心化毫秒級流暢抽卡與鏈上 ERC-721 NFT 鑄造，玩家稀有卡片可真正上鏈存入加密錢包，具備 IPFS 確權、一番賞保底與星塵商店機制。"
     },
     pickUp: {
       title: "PickUp - 購物網站",
@@ -223,8 +233,8 @@ export const translations = {
     address: "台北市信義區松德路65號11樓之2",
     officeHours: "週一至週五 AM 09:00 ~ PM 18:00",
     closedDays: "週六、週日公休",
-    serviceItems: ["形象網站設計", "購物網站建置", "APP 客製開發", "UI/UX 介面設計", "SEO 搜尋優化"],
-    sitemapItems: ["關於我們", "精選作品", "服務項目", "卡洛特遊戲網", "Daily Mate 購物網", "技術文章", "聯絡我們"],
+    serviceItems: ["形象網站設計", "購物網站建置", "APP 客製開發", "Web3 / NFT 系統開發", "UI/UX 介面設計", "SEO 搜尋優化"],
+    sitemapItems: ["關於我們", "精選作品", "服務項目", "卡洛特遊戲網", "風之曦原 (Web3 NFT)", "Daily Mate 購物網", "技術文章", "聯絡我們"],
     form: {
       name: "身分名稱",
       email: "電子信箱",
@@ -247,7 +257,7 @@ export const translations = {
     linksService1: "視界重構 — 用設計的語言，打破平庸的數位邊界。",
     linksService2: "靈魂鑄造 — 將品牌精神轉化為流暢的互動體驗。",
     linksService3: "技術共鳴 — 以高效能全端技術，撐起對未來的無限想像。",
-    linksService4: "網站架設 / App製作 / 遊戲製作 — 從形象官網、購物平台到行動應用與線上遊戲，企劃、設計到開發一站式完成。",
+    linksService4: "網站 / App / 遊戲 / Web3 開發 — 從形象官網、購物平台到 Web3 NFT 遊戲與行動應用，企劃、設計到開發一站式完成。",
     linksContactSlogan: "讓我們在數位的星海中，找到共鳴。",
     linksContactDesc: "無論是創新的點子或深度的轉型，期待與您一同勾勒未來。",
     gamesPage: {

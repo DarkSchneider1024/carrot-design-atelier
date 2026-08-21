@@ -46,6 +46,7 @@ const Header: React.FC = () => {
     { href: '/about', label: t.navAbout },
     { href: '/links', label: t.navServices },
     { href: '/games', label: t.navGames },
+    { href: 'https://web3-0-game.vercel.app/', label: t.navWeb3, external: true },
     { href: 'https://daily-mate.carrot-atelier.online/', label: t.navShop, external: true },
     { href: '/articles', label: t.navArticles },
     { href: '/contact', label: t.contact },
