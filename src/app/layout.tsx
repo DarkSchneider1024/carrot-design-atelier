@@ -4,6 +4,7 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import Script from "next/script";
 import { LanguageProvider } from "@/context/LanguageContext";
 
 const outfit = Outfit({
@@ -59,6 +60,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-TW">
+      <head>
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1011130961445948"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+      </head>
       {process.env.NEXT_PUBLIC_GA_ID && (
         <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GA_ID} />
       )}
