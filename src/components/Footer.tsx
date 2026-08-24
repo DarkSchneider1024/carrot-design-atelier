@@ -1,3 +1,4 @@
+import AdBanner from './AdBanner';
 'use client';
 
 import React from 'react';
@@ -98,6 +99,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
+      <AdBanner />
       <div className={styles.bottomRow}>
         <div className={styles.copyright}>
           © {currentYear} 卡洛特工作室有限公司  {t.copyright}
