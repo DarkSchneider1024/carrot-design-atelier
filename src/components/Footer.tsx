@@ -1,5 +1,5 @@
-import AdBanner from './AdBanner';
 'use client';
+import AdBanner from './AdBanner';
 
 import React from 'react';
 import Link from 'next/link';
