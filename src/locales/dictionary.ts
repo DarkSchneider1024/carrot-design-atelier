@@ -159,10 +159,32 @@ export const translations = {
       seriesTitle: "From Zero to One: Building a Heterogeneous Data Analytics Platform with K8S + GitOps",
       seriesDescription: "A 30-day series walking through the Wafer BI project: why the stack was chosen, how Java, Python and React work together, and how K8S with GitOps holds the platform up.",
       seriesAuthor: "Author: carrot771024 (Carrot Studio)",
-      seriesStatus: "Ongoing",
+      seriesStatus: "Completed · 30/30",
       viewSeries: "View the full series on iThome →",
-      listTitle: "Articles",
-      readArticle: "Read →",
+      listTitle: "All 30 Articles",
+      listIntro: "Thirty days, grouped into five chapters — read it end to end, or jump straight to the part you need.",
+      chapters: [
+        {
+          title: "Foundations & System Design",
+          description: "Picking the topic, choosing a heterogeneous stack, containerising each service, and getting the whole thing running locally."
+        },
+        {
+          title: "Onto K8S: Deployment & Resources",
+          description: "Moving the stack onto Kubernetes — traffic, persistent storage, configuration, and letting the cluster heal itself."
+        },
+        {
+          title: "CI/CD & GitOps",
+          description: "GitHub Actions and ArgoCD, wired into one path that runs from a commit all the way to production."
+        },
+        {
+          title: "Observability & Supply-chain Security",
+          description: "Metrics, dashboards, distributed tracing and image scanning — making both the state and the risk visible."
+        },
+        {
+          title: "Operations, Tuning & the Finish Line",
+          description: "Autoscaling, schema migrations, disaster recovery, performance tuning, and a look back at the 30 days."
+        }
+      ],
       relatedTitle: "The project behind the series",
       relatedDescription: "Wafer BI is the engineering BI platform this series is built around — a large-scale data analytics stack running on K8S and Delta Lake.",
       relatedCta: "Visit Wafer BI →"
@@ -328,10 +350,32 @@ export const translations = {
       seriesTitle: "從零到一：使用 K8S + GitOps 打造異構技術棧的資料分析平台",
       seriesDescription: "為期 30 天的系列文，從 Wafer BI 的專案背景與技術選型談起，一路走過 Java、Python 與 React 的異構協作，以及 K8S 搭配 GitOps 如何撐起整個平台。",
       seriesAuthor: "作者：carrot771024（卡洛特工作室）",
-      seriesStatus: "連載中",
+      seriesStatus: "30 天完賽 · 30/30",
       viewSeries: "前往 iThome 查看完整系列 →",
-      listTitle: "系列文章",
-      readArticle: "閱讀文章 →",
+      listTitle: "系列文章（全 30 篇）",
+      listIntro: "30 天的內容依主題分成五個章節，可以從頭讀完，也可以直接跳到需要的段落。",
+      chapters: [
+        {
+          title: "專案起點與系統設計",
+          description: "從題目發想、異構技術選型談起，一路做到各服務容器化，以及本機把整套系統跑起來。"
+        },
+        {
+          title: "上 K8S：部署與資源管理",
+          description: "把整套服務搬上 Kubernetes，處理對外流量、持久化儲存、設定管理與自癒機制。"
+        },
+        {
+          title: "CI/CD 與 GitOps",
+          description: "用 GitHub Actions 搭配 ArgoCD，打通從一次 commit 到生產環境的完整自動化路徑。"
+        },
+        {
+          title: "可觀測性與供應鏈安全",
+          description: "監控指標、儀表板、分散式追蹤與鏡像掃描，讓系統的狀態與風險都看得見。"
+        },
+        {
+          title: "維運、調優與完賽",
+          description: "彈性伸縮、資料庫遷移、災難復原與效能調優，最後是這 30 天的完整回顧。"
+        }
+      ],
       relatedTitle: "系列文背後的作品",
       relatedDescription: "Wafer BI 就是這個系列文所圍繞的工程 BI 分析平台，運用 K8S 與 Delta Lake 實現大規模資料分析。",
       relatedCta: "查看 Wafer BI →"
