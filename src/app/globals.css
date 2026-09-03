@@ -41,7 +41,7 @@ a {
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
+  from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
@@ -50,8 +50,19 @@ a {
   to { transform: translateX(0); }
 }
 
+/* `both` (not `forwards`) is the important part: with `forwards` alone a
+   delayed element paints in its final state until the delay elapses, then
+   snaps back to `from` — that flash is what made hero copy pop in line by
+   line on every navigation. Delays stay small so the stagger reads as one
+   motion rather than a ladder. */
 .fade-in {
-  animation: fadeIn 0.8s ease-out forwards;
+  animation: fadeIn 0.55s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in {
+    animation: none;
+  }
 }
 
 /* Responsive Utilities */

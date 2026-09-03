@@ -24,16 +24,16 @@ export default function AboutPage() {
 
         <div className={styles.heroContent}>
           <h1 className={`${styles.title} fade-in`}>{t.aboutHeroTitle}</h1>
-          <p className={`${styles.aboutText} fade-in`} style={{ animationDelay: '0.2s' }}>
+          <p className={`${styles.aboutText} fade-in`} style={{ animationDelay: '0.05s' }}>
             {t.aboutText}
           </p>
-          <p className={`${styles.description} fade-in`} style={{ animationDelay: '0.3s' }}>
+          <p className={`${styles.description} fade-in`} style={{ animationDelay: '0.1s' }}>
             {t.aboutDesc}
           </p>
           <Link
             href="/links"
             className={`${styles.heroLink} fade-in`}
-            style={{ animationDelay: '0.4s' }}
+            style={{ animationDelay: '0.15s' }}
           >
             {t.servicesTitle} →
           </Link>

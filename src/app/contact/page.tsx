@@ -14,10 +14,10 @@ export default function ContactPage() {
         <div className={styles.heroOverlay}></div>
         <div className={styles.heroContent}>
           <h1 className={`${styles.title} fade-in`}>{t.contactTitle}</h1>
-          <p className={`${styles.desc} fade-in`} style={{ animationDelay: '0.2s' }}>
+          <p className={`${styles.desc} fade-in`} style={{ animationDelay: '0.05s' }}>
             {t.contactDesc}
           </p>
-          <p className={`${styles.subtitle} fade-in`} style={{ animationDelay: '0.3s' }}>
+          <p className={`${styles.subtitle} fade-in`} style={{ animationDelay: '0.1s' }}>
             {t.contactSubtitle}
           </p>
         </div>

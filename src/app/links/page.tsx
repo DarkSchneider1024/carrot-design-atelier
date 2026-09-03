@@ -42,7 +42,7 @@ export default function LinksPage() {
 
         <div className={styles.heroContent}>
           <h1 className={`${styles.slogan} fade-in`}>{t.servicesHeroTitle}</h1>
-          <p className={`${styles.description} fade-in`} style={{ animationDelay: '0.2s' }}>
+          <p className={`${styles.description} fade-in`} style={{ animationDelay: '0.05s' }}>
             {t.servicesHeroDesc}
           </p>
         </div>
@@ -55,7 +55,7 @@ export default function LinksPage() {
               <div 
                 key={index} 
                 className={`${styles.serviceCard} fade-in`}
-                style={{ animationDelay: `${0.3 + index * 0.1}s` }}
+                style={{ animationDelay: `${0.1 + index * 0.05}s` }}
               >
                 <div className={styles.serviceDecorator}></div>
                 <h3 className={styles.serviceTitle}>{service.title}</h3>
@@ -68,7 +68,7 @@ export default function LinksPage() {
 
       <section className={styles.contactSection}>
         <div className="container">
-          <div className={`${styles.contactBox} fade-in`} style={{ animationDelay: '0.6s' }}>
+          <div className={`${styles.contactBox} fade-in`} style={{ animationDelay: '0.35s' }}>
             <h2 className={styles.contactSlogan}>{t.linksContactSlogan}</h2>
             <p className={styles.contactDesc}>{t.linksContactDesc}</p>
             <a href="mailto:carrot771024@gmail.com" className={styles.contactBtn}>

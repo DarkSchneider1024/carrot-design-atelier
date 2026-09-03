@@ -25,16 +25,16 @@ export default function GamesPage() {
         <div className="container">
           <div className={styles.heroContent}>
             <span className={`${styles.badge} fade-in`}>{g.badge}</span>
-            <h2 className={`${styles.enTitle} fade-in`} style={{ animationDelay: '0.1s' }}>
+            <h2 className={`${styles.enTitle} fade-in`} style={{ animationDelay: '0.05s' }}>
               {g.enTitle}
             </h2>
-            <h1 className={`${styles.title} fade-in`} style={{ animationDelay: '0.2s' }}>
+            <h1 className={`${styles.title} fade-in`} style={{ animationDelay: '0.1s' }}>
               {g.title}
             </h1>
-            <p className={`${styles.subtitle} fade-in`} style={{ animationDelay: '0.3s' }}>
+            <p className={`${styles.subtitle} fade-in`} style={{ animationDelay: '0.15s' }}>
               {g.subtitle}
             </p>
-            <p className={`${styles.description} fade-in`} style={{ animationDelay: '0.4s' }}>
+            <p className={`${styles.description} fade-in`} style={{ animationDelay: '0.2s' }}>
               {g.description}
             </p>
             <a
@@ -42,14 +42,14 @@ export default function GamesPage() {
               target="_blank"
               rel="noopener noreferrer"
               className={`${styles.ctaBtn} fade-in`}
-              style={{ animationDelay: '0.5s' }}
+              style={{ animationDelay: '0.25s' }}
             >
               {g.cta}
               <span className={styles.ctaArrow} aria-hidden="true">
                 →
               </span>
             </a>
-            <p className={`${styles.ctaHint} fade-in`} style={{ animationDelay: '0.6s' }}>
+            <p className={`${styles.ctaHint} fade-in`} style={{ animationDelay: '0.3s' }}>
               {g.ctaHint}
             </p>
           </div>
@@ -64,7 +64,7 @@ export default function GamesPage() {
             target="_blank"
             rel="noopener noreferrer"
             className={`${styles.preview} fade-in`}
-            style={{ animationDelay: '0.7s' }}
+            style={{ animationDelay: '0.35s' }}
           >
             <Image
               src={`${prefix}/images/carrot_games.png`}
