@@ -17,7 +17,11 @@ export const translations = {
     navGames: "Games",
     navWeb3: "Web3 NFT",
     navShop: "Shop",
-    navArticles: "Articles",
+    navArticles: "Tech Sharing",
+    webTutorial: {
+      title: "Web Dev Interactive Learning Platform",
+      description: "An interactive web development learning platform built by Carrot Studio. Covers HTML5, CSS3, modern JavaScript, and Vue 3 with 48 live playground units, RWD layout masterclasses, and an instant developer glossary."
+    },
     fastOrder: {
       title: "FastOrder - Smart Ordering System",
       description: "A modern ordering platform designed for restaurants and group buying, providing a smooth user experience and powerful backend management. Supports multiple payment methods and real-time order tracking."
@@ -56,7 +60,7 @@ export const translations = {
     officeHours: "Monday to Friday AM 09:00 ~ PM 18:00",
     closedDays: "Closed on Saturday and Sunday",
     serviceItems: ["Brand Website Design", "E-commerce Development", "Custom APP Development", "Web3 & NFT Development", "UI/UX Interface Design", "SEO Optimization"],
-    sitemapItems: ["About Us", "Featured Works", "Services", "Carrot Games", "Wind's Origin (Web3 NFT)", "Daily Mate Shop", "Tech Writing", "Contact Us"],
+    sitemapItems: ["About Us", "Featured Works", "Services", "Carrot Games", "Wind's Origin (Web3 NFT)", "Daily Mate Shop", "Tech Sharing", "Contact Us"],
     switchLang: "中文",
     contact: "Contact Us",
     contactLine: "LINE ID",
@@ -150,12 +154,16 @@ export const translations = {
       outroCta: "Play Now"
     },
     articlesPage: {
-      metaTitle: "Tech Writing | Carrot Studio",
-      metaDescription: "The 2026 iThome Ironman Contest series by Carrot Studio: building a heterogeneous data analytics platform with K8S + GitOps — the making of Wafer BI.",
-      badge: "2026 iThome Ironman Contest",
-      enTitle: "TECH WRITING",
-      title: "Tech Writing",
-      description: "We write down what we build. This series documents, day by day, how the Wafer BI engineering analytics platform was designed and shipped.",
+      metaTitle: "Tech Sharing | Carrot Studio",
+      metaDescription: "Carrot Studio Tech Sharing: featuring our original interactive Web Dev Learning Platform and 2026 iThome Ironman Contest K8S + GitOps architecture series.",
+      badge: "Technical Sharing",
+      enTitle: "TECH SHARING",
+      title: "Tech Sharing",
+      description: "We write down what we build and share our engineering journeys. Explore our interactive web development learning platform and technical architecture series.",
+      platformBadge: "Open Source Platform",
+      platformTitle: "Web Dev Interactive Learning Platform",
+      platformDesc: "An all-in-one interactive web tutorial platform featuring HTML5, CSS3, modern JavaScript ES6+, and Vue 3. Includes 48 comprehensive lessons, real-time code playground, responsive design exercises, and an instant developer dictionary.",
+      platformCta: "Launch Learning Platform →",
       seriesTitle: "From Zero to One: Building a Heterogeneous Data Analytics Platform with K8S + GitOps",
       seriesDescription: "A 30-day series walking through the Wafer BI project: why the stack was chosen, how Java, Python and React work together, and how K8S with GitOps holds the platform up.",
       seriesAuthor: "Author: carrot771024 (Carrot Studio)",
@@ -208,7 +216,11 @@ export const translations = {
     navGames: "遊戲網",
     navWeb3: "Web3 NFT",
     navShop: "購物網",
-    navArticles: "技術文章",
+    navArticles: "技術分享",
+    webTutorial: {
+      title: "網頁製作教學網站 - 前端互動實戰平台",
+      description: "卡洛特工作室打造的原創互動學習平台。涵蓋 HTML5、CSS3、JavaScript ES6+ 與 Vue 3 核心技術，內建 48 門單元即時演練台、RWD 響應式佈局教學與專有名詞字典，開源免安裝即開即練。"
+    },
     fastOrder: {
       title: "FastOrder - 智能點餐系統",
       description: "為餐廳與團購設計的現代化點餐平台，提供流暢的用戶體驗與強大的後台管理功能。支持多種支付方式與實時訂單追蹤。"
@@ -256,7 +268,7 @@ export const translations = {
     officeHours: "週一至週五 AM 09:00 ~ PM 18:00",
     closedDays: "週六、週日公休",
     serviceItems: ["形象網站設計", "購物網站建置", "APP 客製開發", "Web3 / NFT 系統開發", "UI/UX 介面設計", "SEO 搜尋優化"],
-    sitemapItems: ["關於我們", "精選作品", "服務項目", "卡洛特遊戲網", "風之曦原 (Web3 NFT)", "Daily Mate 購物網", "技術文章", "聯絡我們"],
+    sitemapItems: ["關於我們", "精選作品", "服務項目", "卡洛特遊戲網", "風之曦原 (Web3 NFT)", "Daily Mate 購物網", "技術分享", "聯絡我們"],
     form: {
       name: "身分名稱",
       email: "電子信箱",
@@ -341,12 +353,16 @@ export const translations = {
       outroCta: "立即開始遊玩"
     },
     articlesPage: {
-      metaTitle: "技術文章 | Carrot Studio",
-      metaDescription: "卡洛特工作室參加 2026 iThome 鐵人賽的系列文：從零到一，使用 K8S + GitOps 打造異構技術棧的資料分析平台，完整記錄 Wafer BI 的製作歷程。",
-      badge: "2026 iThome 鐵人賽",
-      enTitle: "TECH WRITING",
-      title: "技術文章",
-      description: "我們把做過的東西寫下來。這個系列以每日連載的方式，完整記錄 Wafer BI 工程分析平台從設計到上線的過程。",
+      metaTitle: "技術分享 | Carrot Studio",
+      metaDescription: "卡洛特工作室技術分享：包含原創「網頁製作教學網站」前端互動實戰平台，以及 2026 iThome 鐵人賽 K8S + GitOps 資料分析平台系列文。",
+      badge: "原創開源 · 技術實踐",
+      enTitle: "TECH SHARING",
+      title: "技術分享",
+      description: "我們把做過的東西寫下來，把實戰探索的心得轉化為開源學習資源。從網頁製作教學平台到異構系統架構，完整分享技術實踐。",
+      platformBadge: "原創開源平台",
+      platformTitle: "網頁製作教學網站 (Web Dev Interactive Learning)",
+      platformDesc: "專為現代網頁開發者設計的互動式學習平台。涵蓋 HTML5、CSS3、JavaScript ES6+ 與 Vue 3 核心技術，內建 48 門單元即時演練台、RWD 響應式佈局教學與技術專有名詞字典，免安裝環境打開瀏覽器即可邊學邊練！",
+      platformCta: "前往網頁製作教學網站 →",
       seriesTitle: "從零到一：使用 K8S + GitOps 打造異構技術棧的資料分析平台",
       seriesDescription: "為期 30 天的系列文，從 Wafer BI 的專案背景與技術選型談起，一路走過 Java、Python 與 React 的異構協作，以及 K8S 搭配 GitOps 如何撐起整個平台。",
       seriesAuthor: "作者：carrot771024（卡洛特工作室）",

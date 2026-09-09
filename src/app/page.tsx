@@ -42,6 +42,15 @@ export default function Home() {
       tags: ["Web3.0", "NFT", "ERC-721", "Game"]
     },
     {
+      title: (t as any).webTutorial?.title ?? "網頁製作教學網站",
+      description: (t as any).webTutorial?.description ?? "專為現代網頁開發者設計的互動式學習平台，涵蓋 HTML5、CSS3、JavaScript ES6+ 與 Vue 3 核心技術，內建即時演練台。",
+      image: `${prefix}/images/web_tutorial_jimmy.png`,
+      link: "https://darkschneider1024.github.io/vue-studying/",
+      tags: ["Vue 3", "Interactive Playground", "Frontend", "RWD"],
+      detailLink: "/articles",
+      detailLabel: t.viewJourney
+    },
+    {
       title: t.carrotGames.title,
       description: t.carrotGames.description,
       image: `${prefix}/images/carrot_games.png`,
