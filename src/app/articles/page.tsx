@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './articles.module.css';
 import { useLanguage } from '@/context/LanguageContext';
 
@@ -263,7 +264,7 @@ export default function ArticlesPage() {
       </section>
 
       {/* Platform Highlight - Web Dev Tutorial */}
-      <section className={styles.platformSection}>
+      <section id="tutorial" className={styles.platformSection}>
         <div className="container">
           <div className={styles.platformCard}>
             <div className={styles.platformGrid}>
@@ -275,34 +276,37 @@ export default function ArticlesPage() {
                   className={styles.platformImgLink}
                   aria-label="Visit Web Dev Learning Platform"
                 >
-                  <img
+                  <Image
                     src="/images/web_tutorial_jimmy.png"
-                    alt="網頁製作教學網站預覽畫面"
+                    alt={a.platformTitle}
+                    width={960}
+                    height={540}
                     className={styles.platformImg}
+                    priority
                   />
                   <div className={styles.platformOverlay}>
-                    <span className={styles.platformOverlayBtn}>點擊前往互動平台 ↗</span>
+                    <span className={styles.platformOverlayBtn}>{a.platformOverlayBtn}</span>
                   </div>
                 </a>
               </div>
               <div className={styles.platformInfo}>
                 <div className={styles.platformBadges}>
-                  <span className={styles.platformBadge}>{(a as any).platformBadge || '原創開源平台'}</span>
-                  <span className={styles.platformSubBadge}>48 門實戰單元</span>
-                  <span className={styles.platformSubBadge}>免安裝即時演練</span>
+                  <span className={styles.platformBadge}>{a.platformBadge}</span>
+                  <span className={styles.platformSubBadge}>{a.platformSubBadge1}</span>
+                  <span className={styles.platformSubBadge}>{a.platformSubBadge2}</span>
                 </div>
-                <h2 className={styles.platformTitle}>{(a as any).platformTitle || '網頁製作教學網站'}</h2>
-                <p className={styles.platformDesc}>{(a as any).platformDesc || '專為現代網頁開發者設計的互動式學習平台。涵蓋 HTML5、CSS3、JavaScript ES6+ 與 Vue 3 核心技術，內建 48 門單元即時演練台、RWD 響應式佈局教學與技術專有名詞字典，免安裝環境打開瀏覽器即可邊學邊練！'}</p>
+                <h2 className={styles.platformTitle}>{a.platformTitle}</h2>
+                <p className={styles.platformDesc}>{a.platformDesc}</p>
                 
                 <ul className={styles.platformFeatures}>
                   <li>
-                    <strong>⚡ 免安裝即開即練：</strong>純前端即時編譯，即時預覽 HTML/CSS/JS 與 Vue 3 成果
+                    <strong>{a.platformFeature1Title}</strong>{a.platformFeature1Desc}
                   </li>
                   <li>
-                    <strong>📱 完整 RWD 響應式攻略：</strong>專題剖析 Flexbox、Grid、Clamp 與行動裝置適配技巧
+                    <strong>{a.platformFeature2Title}</strong>{a.platformFeature2Desc}
                   </li>
                   <li>
-                    <strong>📖 內建工程名詞字典：</strong>隨查隨用前端核心術語與實戰解答比對
+                    <strong>{a.platformFeature3Title}</strong>{a.platformFeature3Desc}
                   </li>
                 </ul>
 
@@ -313,7 +317,7 @@ export default function ArticlesPage() {
                     rel="noopener noreferrer"
                     className={styles.platformPrimaryBtn}
                   >
-                    {(a as any).platformCta || '前往網頁製作教學網站 →'}
+                    {a.platformCta}
                   </a>
                   <a
                     href="https://github.com/DarkSchneider1024/vue-studying"
@@ -321,7 +325,7 @@ export default function ArticlesPage() {
                     rel="noopener noreferrer"
                     className={styles.platformSecondaryBtn}
                   >
-                    GitHub 開源專案 ↗
+                    {a.platformGithub}
                   </a>
                 </div>
               </div>

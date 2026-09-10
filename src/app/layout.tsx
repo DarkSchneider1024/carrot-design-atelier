@@ -20,8 +20,8 @@ export const viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://carrot-atelier.online"),
   title: "卡洛特工作室 | Carrot Studio - 專業網站與 App 製作",
-  description: "卡洛特工作室 (Carrot Studio) 提供專業的網站架設、App 製作、遊戲開發服務。精選作品展示：Freezer Shop、FastOrder 與 PickUp。",
-  keywords: "卡洛特工作室, Carrot Studio, 網站架設, App 製作, 遊戲製作, Freezer Shop, FastOrder, PickUp, 網頁設計, 數位轉型",
+  description: "卡洛特工作室 (Carrot Studio) 提供專業的網站架設、App 製作、遊戲與 Web3 開發服務。精選作品展示：網頁製作教學網站、風之曦原 (Web3 NFT)、Carrot Games、Daily Mate、Freezer Shop、FastOrder 與 PickUp。",
+  keywords: "卡洛特工作室, Carrot Studio, 網頁製作教學, 程式自學, Vue 3, 網站架設, App 製作, 遊戲製作, Web3, NFT, Daily Mate, Freezer Shop, FastOrder, PickUp, 網頁設計, 數位轉型",
   authors: [{ name: "Carrot Studio" }],
   robots: "index, follow",
   openGraph: {
