@@ -1,5 +1,6 @@
 'use client';
 
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './articles.module.css';
@@ -242,6 +243,18 @@ const chapterRanges = [
 export default function ArticlesPage() {
   const { t } = useLanguage();
   const a = t.articlesPage;
+  const [activeTab, setActiveTab] = useState<'k8s' | 'tutorial'>('k8s');
+
+  useEffect(() => {
+    const handleHash = () => {
+      if (typeof window !== 'undefined' && (window.location.hash === '#tutorial' || window.location.search.includes('tutorial'))) {
+        setActiveTab('tutorial');
+      }
+    };
+    handleHash();
+    window.addEventListener('hashchange', handleHash);
+    return () => window.removeEventListener('hashchange', handleHash);
+  }, []);
 
   return (
     <main className={styles.main}>
@@ -263,17 +276,56 @@ export default function ArticlesPage() {
         </div>
       </section>
 
-      {/* Platform Highlight - Web Dev Tutorial */}
-      <section id="tutorial" className={styles.platformSection}>
+      {/* Category Tags Bar */}
+      <section className={styles.tagSection}>
         <div className="container">
-          <div className={styles.platformCard}>
-            <div className={styles.platformGrid}>
-              <div className={styles.platformVisual}>
+          <div className={styles.tagContainer}>
+            {/* Tag 1: K8S */}
+            <button
+              type="button"
+              className={`${styles.tagPill} ${activeTab === 'k8s' ? styles.tagPillActive : ''}`}
+              onClick={() => setActiveTab('k8s')}
+            >
+              <span className={styles.tagIcon}>☸️</span>
+              <span>{a.tagK8s}</span>
+            </button>
+
+            {/* Tag 2: Web Tutorial Link & Tab */}
+            <div className={`${styles.tagGroup} ${activeTab === 'tutorial' ? styles.tagPillActive : ''}`}>
+              <button
+                type="button"
+                className={styles.tagPillInner}
+                onClick={() => setActiveTab('tutorial')}
+              >
+                <span className={styles.tagIcon}>🌐</span>
+                <span>{a.tagTutorial}</span>
+              </button>
+              <a
+                href={WEB_TUTORIAL_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.tagExtLink}
+                title={a.platformCta}
+                aria-label="開啟教學網站"
+              >
+                ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Web Tutorial Showcase (Clean & Minimal) */}
+      {activeTab === 'tutorial' && (
+        <section id="tutorial" className={styles.tutorialSection}>
+          <div className="container">
+            <div className={styles.tutorialCard}>
+              <div className={styles.tutorialVisual}>
                 <a
                   href={WEB_TUTORIAL_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={styles.platformImgLink}
+                  className={styles.tutorialImgLink}
                   aria-label="Visit Web Dev Learning Platform"
                 >
                   <Image
@@ -281,41 +333,25 @@ export default function ArticlesPage() {
                     alt={a.platformTitle}
                     width={960}
                     height={540}
-                    className={styles.platformImg}
+                    className={styles.tutorialImg}
                     priority
                   />
-                  <div className={styles.platformOverlay}>
-                    <span className={styles.platformOverlayBtn}>{a.platformOverlayBtn}</span>
+                  <div className={styles.tutorialOverlay}>
+                    <span className={styles.tutorialOverlayBtn}>{a.platformOverlayBtn}</span>
                   </div>
                 </a>
               </div>
-              <div className={styles.platformInfo}>
-                <div className={styles.platformBadges}>
-                  <span className={styles.platformBadge}>{a.platformBadge}</span>
-                  <span className={styles.platformSubBadge}>{a.platformSubBadge1}</span>
-                  <span className={styles.platformSubBadge}>{a.platformSubBadge2}</span>
-                </div>
-                <h2 className={styles.platformTitle}>{a.platformTitle}</h2>
-                <p className={styles.platformDesc}>{a.platformDesc}</p>
+              <div className={styles.tutorialBody}>
+                <span className={styles.tutorialBadge}>{a.platformBadge}</span>
+                <h2 className={styles.tutorialTitle}>{a.platformTitle}</h2>
+                <p className={styles.tutorialDesc}>{a.platformDesc}</p>
                 
-                <ul className={styles.platformFeatures}>
-                  <li>
-                    <strong>{a.platformFeature1Title}</strong>{a.platformFeature1Desc}
-                  </li>
-                  <li>
-                    <strong>{a.platformFeature2Title}</strong>{a.platformFeature2Desc}
-                  </li>
-                  <li>
-                    <strong>{a.platformFeature3Title}</strong>{a.platformFeature3Desc}
-                  </li>
-                </ul>
-
-                <div className={styles.platformActions}>
+                <div className={styles.tutorialActions}>
                   <a
                     href={WEB_TUTORIAL_URL}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={styles.platformPrimaryBtn}
+                    className={styles.primaryBtn}
                   >
                     {a.platformCta}
                   </a>
@@ -323,7 +359,7 @@ export default function ArticlesPage() {
                     href="https://github.com/DarkSchneider1024/vue-studying"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={styles.platformSecondaryBtn}
+                    className={styles.secondaryBtn}
                   >
                     {a.platformGithub}
                   </a>
@@ -331,116 +367,121 @@ export default function ArticlesPage() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
-      {/* Series overview */}
-      <section className={styles.seriesSection}>
-        <div className="container">
-          <div className={styles.seriesCard}>
-            <div className={styles.seriesMeta}>
-              <span className={styles.seriesTag}>iThome</span>
-              <span className={styles.seriesStatus}>{a.seriesStatus}</span>
+      {/* K8S Series Content */}
+      {activeTab === 'k8s' && (
+        <>
+          {/* Series overview */}
+          <section className={styles.seriesSection}>
+            <div className="container">
+              <div className={styles.seriesCard}>
+                <div className={styles.seriesMeta}>
+                  <span className={styles.seriesTag}>iThome</span>
+                  <span className={styles.seriesStatus}>{a.seriesStatus}</span>
+                </div>
+                <h2 className={styles.seriesTitle}>{a.seriesTitle}</h2>
+                <p className={styles.seriesDesc}>{a.seriesDescription}</p>
+                <p className={styles.seriesAuthor}>{a.seriesAuthor}</p>
+                <a
+                  href={SERIES_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.seriesLink}
+                >
+                  {a.viewSeries}
+                </a>
+              </div>
             </div>
-            <h2 className={styles.seriesTitle}>{a.seriesTitle}</h2>
-            <p className={styles.seriesDesc}>{a.seriesDescription}</p>
-            <p className={styles.seriesAuthor}>{a.seriesAuthor}</p>
-            <a
-              href={SERIES_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.seriesLink}
-            >
-              {a.viewSeries}
-            </a>
-          </div>
-        </div>
-      </section>
+          </section>
 
-      {/* Article list — grouped into chapters */}
-      <section className={styles.listSection}>
-        <div className="container">
-          <h2 className={styles.sectionTitle}>{a.listTitle}</h2>
-          <p className={styles.listIntro}>{a.listIntro}</p>
+          {/* Article list — grouped into chapters */}
+          <section className={styles.listSection}>
+            <div className="container">
+              <h2 className={styles.sectionTitle}>{a.listTitle}</h2>
+              <p className={styles.listIntro}>{a.listIntro}</p>
 
-          <div className={styles.chapters}>
-            {chapterRanges.map((range, index) => {
-              const chapter = a.chapters[index];
-              const articles = ironmanArticles
-                .filter((article) => article.day >= range.from && article.day <= range.to)
-                .sort((x, y) => x.day - y.day);
+              <div className={styles.chapters}>
+                {chapterRanges.map((range, index) => {
+                  const chapter = a.chapters[index];
+                  const articles = ironmanArticles
+                    .filter((article) => article.day >= range.from && article.day <= range.to)
+                    .sort((x, y) => x.day - y.day);
 
-              return (
-                <section key={chapter.title} className={styles.chapter}>
-                  <header className={styles.chapterHead}>
-                    <span className={styles.chapterIndex}>
-                      CHAPTER {String(index + 1).padStart(2, '0')}
-                    </span>
-                    <h3 className={styles.chapterTitle}>{chapter.title}</h3>
-                    <span className={styles.chapterRange}>
-                      DAY {range.from} – {range.to}
-                    </span>
-                  </header>
-                  <p className={styles.chapterDesc}>{chapter.description}</p>
+                  return (
+                    <section key={chapter.title} className={styles.chapter}>
+                      <header className={styles.chapterHead}>
+                        <span className={styles.chapterIndex}>
+                          CHAPTER {String(index + 1).padStart(2, '0')}
+                        </span>
+                        <h3 className={styles.chapterTitle}>{chapter.title}</h3>
+                        <span className={styles.chapterRange}>
+                          DAY {range.from} – {range.to}
+                        </span>
+                      </header>
+                      <p className={styles.chapterDesc}>{chapter.description}</p>
 
-                  <ul className={styles.articleList}>
-                    {articles.map((article) => (
-                      <li key={article.day}>
-                        <a
-                          href={article.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className={styles.articleCard}
-                        >
-                          <div className={styles.dayBadge}>
-                            <span className={styles.dayLabel}>DAY</span>
-                            <span className={styles.dayNumber}>{article.day}</span>
-                          </div>
-                          <div className={styles.articleBody}>
-                            <h4 className={styles.articleTitle}>{article.title}</h4>
-                            <p className={styles.articleSummary}>{article.summary}</p>
-                          </div>
-                          <div className={styles.articleMeta}>
-                            <time className={styles.articleDate} dateTime={article.date}>
-                              {article.date}
-                            </time>
-                            <span className={styles.articleArrow} aria-hidden="true">
-                              →
-                            </span>
-                          </div>
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </section>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Related project */}
-      <section className={styles.relatedSection}>
-        <div className="container">
-          <div className={styles.relatedBox}>
-            <h2 className={styles.relatedTitle}>{a.relatedTitle}</h2>
-            <p className={styles.relatedDesc}>{a.relatedDescription}</p>
-            <div className={styles.relatedActions}>
-              <a
-                href={WAFER_BI_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.relatedBtn}
-              >
-                {a.relatedCta}
-              </a>
-              <Link href="/#works" className={styles.relatedLink}>
-                {t.showcaseTitle}
-              </Link>
+                      <ul className={styles.articleList}>
+                        {articles.map((article) => (
+                          <li key={article.day}>
+                            <a
+                              href={article.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className={styles.articleCard}
+                            >
+                              <div className={styles.dayBadge}>
+                                <span className={styles.dayLabel}>DAY</span>
+                                <span className={styles.dayNumber}>{article.day}</span>
+                              </div>
+                              <div className={styles.articleBody}>
+                                <h4 className={styles.articleTitle}>{article.title}</h4>
+                                <p className={styles.articleSummary}>{article.summary}</p>
+                              </div>
+                              <div className={styles.articleMeta}>
+                                <time className={styles.articleDate} dateTime={article.date}>
+                                  {article.date}
+                                </time>
+                                <span className={styles.articleArrow} aria-hidden="true">
+                                  →
+                                </span>
+                              </div>
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </section>
+                  );
+                })}
+              </div>
             </div>
-          </div>
-        </div>
-      </section>
+          </section>
+
+          {/* Related project */}
+          <section className={styles.relatedSection}>
+            <div className="container">
+              <div className={styles.relatedBox}>
+                <h2 className={styles.relatedTitle}>{a.relatedTitle}</h2>
+                <p className={styles.relatedDesc}>{a.relatedDescription}</p>
+                <div className={styles.relatedActions}>
+                  <a
+                    href={WAFER_BI_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.relatedBtn}
+                  >
+                    {a.relatedCta}
+                  </a>
+                  <Link href="/#works" className={styles.relatedLink}>
+                    {t.showcaseTitle}
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </section>
+        </>
+      )}
     </main>
   );
 }

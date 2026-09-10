@@ -438,63 +438,163 @@
   }
 }
 
-/* ---------- Platform Section (Web Dev Tutorial) ---------- */
+/* ---------- Category Tags Bar ---------- */
 
-.platformSection {
-  padding: 0 0 4rem;
-  background-color: #fff;
+.tagSection {
+  background: linear-gradient(180deg, #082a2f 0%, #0d383e 100%);
+  padding: 0 0 2.5rem;
 }
 
-.platformCard {
-  max-width: 1080px;
-  margin: -6rem auto 0;
-  padding: 2.5rem;
-  background: #ffffff;
-  border: 1px solid rgba(197, 160, 89, 0.25);
-  border-radius: 28px;
-  box-shadow: 0 24px 60px rgba(14, 57, 63, 0.12);
-  position: relative;
-  z-index: 5;
-}
-
-.platformGrid {
-  display: grid;
-  grid-template-columns: 1.15fr 1fr;
-  gap: 2.5rem;
+.tagContainer {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  gap: 1rem;
 }
 
-.platformVisual {
-  position: relative;
-  border-radius: 18px;
+.tagPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.65rem 1.4rem;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  backdrop-filter: blur(8px);
+}
+
+.tagPill:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(197, 160, 89, 0.5);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.tagPillActive {
+  background: linear-gradient(135deg, #c5a059 0%, #dfc38a 100%);
+  border-color: #dfc38a;
+  color: #0e393f !important;
+  box-shadow: 0 4px 16px rgba(197, 160, 89, 0.35);
+  font-weight: 700;
+}
+
+.tagPillActive:hover {
+  background: linear-gradient(135deg, #dfc38a 0%, #c5a059 100%);
+  color: #0e393f !important;
+}
+
+.tagGroup {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   overflow: hidden;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: all 0.25s ease;
 }
 
-.platformImgLink {
-  display: block;
+.tagGroup:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(197, 160, 89, 0.5);
+}
+
+.tagGroup.tagPillActive {
+  background: linear-gradient(135deg, #c5a059 0%, #dfc38a 100%);
+  border-color: #dfc38a;
+  box-shadow: 0 4px 16px rgba(197, 160, 89, 0.35);
+}
+
+.tagPillInner {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.65rem 1rem 0.65rem 1.4rem;
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tagExtLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 1.1rem 0.65rem 0.6rem;
+  color: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.tagPillActive .tagExtLink {
+  border-left-color: rgba(14, 57, 63, 0.2);
+  color: #0e393f;
+}
+
+.tagExtLink:hover {
+  transform: translateX(2px) translateY(-1px);
+}
+
+.tagIcon {
+  font-size: 1.1rem;
+}
+
+/* ---------- Tutorial Tab Showcase (Clean & Minimal) ---------- */
+
+.tutorialSection {
+  padding: 4rem 0 6rem;
+  background: #fdfcfb;
+}
+
+.tutorialCard {
+  max-width: 860px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 20px 50px rgba(14, 57, 63, 0.08);
+}
+
+.tutorialVisual {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16 / 9;
+  background: #f4f6f6;
   overflow: hidden;
 }
 
-.platformImg {
+.tutorialImgLink {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.tutorialImg {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.4s ease;
 }
 
-.platformImgLink:hover .platformImg {
-  transform: scale(1.03);
+.tutorialImgLink:hover .tutorialImg {
+  transform: scale(1.02);
 }
 
-.platformOverlay {
+.tutorialOverlay {
   position: absolute;
   inset: 0;
-  background: rgba(14, 57, 63, 0.5);
+  background: rgba(14, 57, 63, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -502,120 +602,84 @@
   transition: opacity 0.3s ease;
 }
 
-.platformImgLink:hover .platformOverlay {
+.tutorialImgLink:hover .tutorialOverlay {
   opacity: 1;
 }
 
-.platformOverlayBtn {
+.tutorialOverlayBtn {
   background: #fff;
   color: #0e393f;
   font-weight: 700;
   font-size: 0.95rem;
-  padding: 0.75rem 1.4rem;
+  padding: 0.75rem 1.5rem;
   border-radius: 50px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 }
 
-.platformInfo {
-  display: flex;
-  flex-direction: column;
+.tutorialBody {
+  padding: 2.5rem 3rem 3rem;
 }
 
-.platformBadges {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.6rem;
-  margin-bottom: 1rem;
-}
-
-.platformBadge {
-  background: linear-gradient(135deg, #c5a059 0%, #e0c58d 100%);
-  color: #1a1a1a;
-  font-size: 0.8rem;
-  font-weight: 800;
+.tutorialBadge {
+  display: inline-block;
   padding: 0.25rem 0.85rem;
-  border-radius: 20px;
-  letter-spacing: 0.05em;
-}
-
-.platformSubBadge {
   background: #f0f7f7;
   color: #0e393f;
   border: 1px solid #d0e4e6;
-  font-size: 0.75rem;
-  font-weight: 600;
-  padding: 0.25rem 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 700;
   border-radius: 20px;
+  margin-bottom: 1rem;
 }
 
-.platformTitle {
-  font-size: clamp(1.4rem, 2.5vw, 1.85rem);
+.tutorialTitle {
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
   font-weight: 800;
   color: #0e393f;
-  line-height: 1.35;
   margin: 0 0 1rem;
+  line-height: 1.35;
 }
 
-.platformDesc {
-  font-size: 0.98rem;
+.tutorialDesc {
+  font-size: 1rem;
   line-height: 1.8;
   color: #555;
-  margin: 0 0 1.25rem;
+  margin: 0 0 2rem;
 }
 
-.platformFeatures {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-}
-
-.platformFeatures li {
-  font-size: 0.9rem;
-  line-height: 1.6;
-  color: #333;
-}
-
-.platformFeatures strong {
-  color: #0e393f;
-}
-
-.platformActions {
+.tutorialActions {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
 }
 
-.platformPrimaryBtn {
+.primaryBtn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.85rem 1.6rem;
+  padding: 0.9rem 2rem;
   background: linear-gradient(135deg, #0e393f 0%, #17545d 100%);
   color: #fff;
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 1rem;
   border-radius: 50px;
   text-decoration: none;
   box-shadow: 0 6px 18px rgba(14, 57, 63, 0.25);
-  transition: all 0.3s ease;
+  transition: all 0.25s ease;
 }
 
-.platformPrimaryBtn:hover {
+.primaryBtn:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 24px rgba(14, 57, 63, 0.35);
   background: linear-gradient(135deg, #17545d 0%, #0e393f 100%);
 }
 
-.platformSecondaryBtn {
+.secondaryBtn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.85rem 1.4rem;
+  padding: 0.9rem 1.6rem;
   background: #f5f5f5;
   color: #444;
   font-weight: 600;
@@ -623,22 +687,17 @@
   border-radius: 50px;
   text-decoration: none;
   border: 1px solid #ddd;
-  transition: all 0.3s ease;
+  transition: all 0.25s ease;
 }
 
-.platformSecondaryBtn:hover {
+.secondaryBtn:hover {
   background: #eaeaea;
   color: #111;
-  border-color: #ccc;
+  border-color: #bbb;
 }
 
-@media (max-width: 900px) {
-  .platformGrid {
-    grid-template-columns: 1fr;
-    gap: 1.75rem;
-  }
-  .platformCard {
-    margin-top: -4rem;
+@media (max-width: 768px) {
+  .tutorialBody {
     padding: 1.75rem;
   }
 }

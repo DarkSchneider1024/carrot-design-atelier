@@ -4,7 +4,6 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
-import Script from "next/script";
 import { LanguageProvider } from "@/context/LanguageContext";
 
 const outfit = Outfit({
