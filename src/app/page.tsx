@@ -35,6 +35,13 @@ export default function Home() {
       tags: ["Next.js", "Branding"]
     },
     {
+      title: t.konjacTranslator.title,
+      description: t.konjacTranslator.description,
+      image: `${prefix}/images/konjac_translator.png`,
+      link: "https://chromewebstore.google.com/detail/hapmdlmmjkejfdnapbechepjfkldecbn?utm_source=item-share-cb",
+      tags: ["Chrome Extension", "AI Translation", "Privacy First", "Multi-Engine"]
+    },
+    {
       title: t.web3Game.title,
       description: t.web3Game.description,
       image: `${prefix}/images/web3_game.jpg`,
