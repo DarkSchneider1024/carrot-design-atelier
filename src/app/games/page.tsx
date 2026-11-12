@@ -81,27 +81,56 @@ export default function GamesPage() {
       {/* Game lineup */}
       <section className={styles.lineupSection}>
         <div className="container">
-          <h2 className={styles.sectionTitle}>{g.lineupTitle}</h2>
-          <p className={styles.sectionSubtitle}>{g.lineupSubtitle}</p>
+          <div className={styles.lineupHeader}>
+            <span className={styles.lineupBadge}>9 TITLES LIVE</span>
+            <h2 className={styles.sectionTitle}>{g.lineupTitle}</h2>
+            <p className={styles.sectionSubtitle}>{g.lineupSubtitle}</p>
+          </div>
 
           <div className={styles.gameGrid}>
-            {g.games.map((game, index) => {
-              const Icon = gameIcons[index];
+            {g.games.map((game: any, index: number) => {
+              const Icon = gameIcons[index] || gameIcons[0];
+              const targetUrl = game.href || GAMES_URL;
               return (
-                <a
-                  key={game.name}
-                  href={GAMES_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.gameCard}
-                >
-                  <span className={styles.gameIcon} aria-hidden="true">
-                    <Icon />
-                  </span>
-                  <span className={styles.gameCategory}>{game.category}</span>
-                  <h3 className={styles.gameName}>{game.name}</h3>
-                  <p className={styles.gameDesc}>{game.description}</p>
-                </a>
+                <div key={game.name} className={styles.gameCard}>
+                  {game.img && (
+                    <a
+                      href={targetUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.gameCardCover}
+                      tabIndex={-1}
+                    >
+                      <Image
+                        src={`${prefix}${game.img}`}
+                        alt={game.name}
+                        width={460}
+                        height={258}
+                        className={styles.gameCoverImg}
+                      />
+                      <span className={styles.gameBadge}>{game.category}</span>
+                    </a>
+                  )}
+                  <div className={styles.gameCardBody}>
+                    <div className={styles.gameHeaderRow}>
+                      <span className={styles.gameIcon} aria-hidden="true">
+                        <Icon />
+                      </span>
+                      <h3 className={styles.gameName}>{game.name}</h3>
+                    </div>
+                    <p className={styles.gameDesc}>{game.description}</p>
+                    <div className={styles.gameCardActions}>
+                      <a
+                        href={targetUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.playNowBtn}
+                      >
+                        進入遊戲 ↗
+                      </a>
+                    </div>
+                  </div>
+                </div>
               );
             })}
           </div>

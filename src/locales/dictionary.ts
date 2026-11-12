@@ -111,27 +111,70 @@ export const translations = {
       ctaHint: "Opens games.carrot-atelier.online in a new tab",
       previewAlt: "Carrot Games lobby preview",
       lineupTitle: "Game Lineup",
-      lineupSubtitle: "4 titles available now, more on the way.",
+      lineupSubtitle: "9 original casual battle games available now — click any game to jump straight in.",
       games: [
         {
+          name: "Carrot Town",
+          category: "Simulation / Adventure",
+          description: "Flagship restaurant sim! Shift planning, recipes, R&D, and recruiting companions across portals.",
+          href: "https://vtuber.carrot-atelier.online/town/",
+          img: "/images/games/card_town.webp"
+        },
+        {
+          name: "Big Two 13 Cards",
+          category: "Card Battle",
+          description: "Authentic Taiwan Big Two! Standard scoring, 4 Live2D avatars, smart AI sparring and online rooms.",
+          href: "https://games.carrot-atelier.online/#/big-two",
+          img: "/images/games/card_bigtwo.png"
+        },
+        {
+          name: "Taiwan 16 Mahjong",
+          category: "Mahjong Battle",
+          description: "Traditional 16-tile Taiwan Mahjong with smart winning hand analysis and felt table visual effects.",
+          href: "https://games.carrot-atelier.online/#/mahjong",
+          img: "/images/games/card_mahjong.png"
+        },
+        {
           name: "Xiangqi",
-          category: "Board Battle",
-          description: "Tactical attack and defense across the river. Comes with a high-IQ AI sparring partner and online play with friends."
+          category: "Board Strategy",
+          description: "Tactical attack and defense across the river. Classic mahogany board, high-IQ AI and online matches.",
+          href: "https://games.carrot-atelier.online/#/xiangqi",
+          img: "/images/games/card_xiangqi.png"
         },
         {
           name: "Tetris Battle 2P",
           category: "Puzzle Arcade",
-          description: "The classic 2-minute duel. A test of reflexes and clearing skill, with K.O. knockouts and counter-attacks."
+          description: "The classic 2-minute duel. Reflexes and clearing skill, featuring K.O. knockouts and counter-attacks.",
+          href: "https://games.carrot-atelier.online/#/tetris",
+          img: "/images/games/card_tetris.png"
         },
         {
           name: "Texas Hold'em",
-          category: "Poker",
-          description: "Mind games and chip showdowns. Play against cute AI opponents or open a private room for friends."
+          category: "Poker Entertainment",
+          description: "Mind games and chip showdowns! Play against cute AI opponents or open private tables for friends.",
+          href: "https://games.carrot-atelier.online/#/poker",
+          img: "/images/games/card_poker.png"
         },
         {
-          name: "Magic Fighter",
+          name: "Magic Fighter 3D",
           category: "3D Air Combat",
-          description: "Carrying the soul of the classic Battle City, reborn as a magic-fighter dogfight defending the Carrot Crystal base."
+          description: "Carrying the spirit of Battle City, redesigned with fairy tale villains (Big Bad Wolf, Hunter, Magic Wolf King).",
+          href: "https://games.carrot-atelier.online/#/magic-fighter",
+          img: "/images/games/card_magic_fighter.png"
+        },
+        {
+          name: "Fruit Extreme",
+          category: "Party Platformer",
+          description: "Trap-placement platform battle! Place 20 different traps and race with 6 Carrot family members.",
+          href: "https://games.carrot-atelier.online/#/fruit-havoc",
+          img: "/images/games/card_fruit_havoc.png"
+        },
+        {
+          name: "Carrot Bomberman",
+          category: "Action Arcade",
+          description: "Retro grid bomber action with a mount system! 1-4 player co-op, story mode, and carrot magic bombs.",
+          href: "https://games.carrot-atelier.online/#/bomberman/story",
+          img: "/images/games/card_bomberman.png"
         }
       ],
       featuresTitle: "Platform Highlights",
@@ -325,28 +368,71 @@ export const translations = {
       cta: "前往卡洛特遊戲網",
       ctaHint: "將於新分頁開啟 games.carrot-atelier.online",
       previewAlt: "卡洛特遊戲網大廳畫面預覽",
-      lineupTitle: "遊戲陣容",
-      lineupSubtitle: "目前共 4 款遊戲上線，持續增加中。",
+      lineupTitle: "全系列 9 款遊戲陣容",
+      lineupSubtitle: "正宗台灣麻將、大老二、小鎮旗艦與3D魔法空戰，點擊任一遊戲即可直達開戰！",
       games: [
         {
-          name: "中國象棋",
-          category: "棋牌對戰",
-          description: "楚河漢界戰術攻防！提供高智能 AI 陪練與線上好友連線對弈。"
+          name: "卡洛特小鎮 (CARROT TOWN)",
+          category: "小鎮原創 / 經營模擬",
+          description: "原創餐廳經營模擬！排班、菜單、研發、招募來自異世界的夥伴，用客人的笑容穩住異界之門！",
+          href: "https://vtuber.carrot-atelier.online/town/",
+          img: "/images/games/card_town.webp"
         },
         {
-          name: "俄羅斯方塊對戰",
-          category: "益智街機",
-          description: "經典 2 分鐘對決！考驗反應與消除技巧，支援 K.O. 擊倒與反制攻擊。"
+          name: "台灣大老二 (BIG TWO)",
+          category: "經典棋牌 / 13張對決",
+          description: "正宗十三張大老二！支援快殺結束與全打完排名雙模式，業界標準爆張與持2雙倍計分，導入 Live2D 家族角色！",
+          href: "https://games.carrot-atelier.online/#/big-two",
+          img: "/images/games/card_bigtwo.png"
         },
         {
-          name: "德州撲克",
-          category: "撲克娛樂",
-          description: "心理博弈與籌碼決戰！支援可愛 AI 電腦對決與好友連線開房。"
+          name: "台灣 16 張麻將 (MAHJONG)",
+          category: "麻將館 / 經典國粹",
+          description: "正宗十六張台灣麻將！具備智慧 AI 聽牌分析提示、吃碰槓與台數自動結算，享受頂級翠綠雀莊絨布手感。",
+          href: "https://games.carrot-atelier.online/#/mahjong",
+          img: "/images/games/card_mahjong.png"
         },
         {
-          name: "魔法對戰",
-          category: "3D 動作空戰",
-          description: "傳承經典《坦克大戰》靈魂！重塑為魔法戰機空戰對決，保護蘿蔔水晶基地。"
+          name: "中國象棋 (XIANGQI)",
+          category: "楚河漢界 / 棋盤戰略",
+          description: "楚河漢界戰術攻防！新卡洛特（帥）與新歐蓓樂希（將）智謀交鋒，提供高智能 AI 陪練與好友線上連線。",
+          href: "https://games.carrot-atelier.online/#/xiangqi",
+          img: "/images/games/card_xiangqi.png"
+        },
+        {
+          name: "俄羅斯方塊對戰 (TETRIS BATTLE)",
+          category: "益智街機 / 2分鐘極限",
+          description: "經典 2 分鐘對決！考驗反應與消除技巧，支援 K.O. 擊倒與反制攻擊，由兔子波波與新卡洛兒迎戰。",
+          href: "https://games.carrot-atelier.online/#/tetris",
+          img: "/images/games/card_tetris.png"
+        },
+        {
+          name: "德州撲克 (POKER)",
+          category: "心理博弈 / 籌碼決戰",
+          description: "心理博弈與籌碼決戰！支援可愛 AI 電腦對決與好友連線開房，豪華底池金幣脈衝與全席位 Live2D 角色。",
+          href: "https://games.carrot-atelier.online/#/poker",
+          img: "/images/games/card_poker.png"
+        },
+        {
+          name: "魔法對戰 3D (MAGIC FIGHTER)",
+          category: "3D 空戰 / 重塑坦克大戰",
+          description: "重塑經典《坦克大戰》靈魂為魔法戰機 3D 空戰！敵軍全面換為童話壞人陣營（大灰狼、壞獵人、魔狼王）！",
+          href: "https://games.carrot-atelier.online/#/magic-fighter",
+          img: "/images/games/card_magic_fighter.png"
+        },
+        {
+          name: "水果極限闖關 (FRUIT EXTREME)",
+          category: "派對平台 / 陷阱闖關",
+          description: "類似《超級雞馬》的派對平台對戰！支援單機同屏輪流擺放 20 種陷阱道具，6 位卡洛特家族成員競技。",
+          href: "https://games.carrot-atelier.online/#/fruit-havoc",
+          img: "/images/games/card_fruit_havoc.png"
+        },
+        {
+          name: "卡洛特炸彈人大作戰 (BOMBERMAN)",
+          category: "動作街機 / 騎龍載具",
+          description: "Godot 4 引擎打造！經典 13x13 網格炸彈超人，獨家坐騎系統，支援 1-4 人同樂與胡蘿蔔魔法炸彈！",
+          href: "https://games.carrot-atelier.online/#/bomberman/story",
+          img: "/images/games/card_bomberman.png"
         }
       ],
       featuresTitle: "平台特色",
