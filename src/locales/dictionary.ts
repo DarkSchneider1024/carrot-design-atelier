@@ -1,7 +1,7 @@
 export const translations = {
   en: {
     title: "Carrot Studio | Professional Website & App Development",
-    description: "Carrot Studio provides professional website construction, App production, game development and Web3 services. Featured works: Translation Gummy (Chrome Extension), Web Dev Learning Platform, Wind's Origin (Web3 NFT), Carrot Games, Daily Mate, Freezer Shop, FastOrder and PickUp.",
+    description: "Carrot Studio provides professional website construction, App production, game development and Web3 services. Featured works: Sister Carol's Storytime (AI VTuber), Translation Gummy (Chrome Extension), Web Dev Learning Platform, Wind's Origin (Web3 NFT), Carrot Games, Daily Mate, Freezer Shop, FastOrder and PickUp.",
     heroTitle: "CARROT STUDIO",
     heroChTitle: "Carrot Studio",
     tagline: "CREATIVE TECH STUDIO",
@@ -18,6 +18,10 @@ export const translations = {
     navWeb3: "Web3 NFT",
     navShop: "Shop",
     navArticles: "Tech Sharing",
+    vtuberStory: {
+      title: "Sister Carol's Storytime - AI VTuber Theater",
+      description: "Carrot Entertainment's official AI VTuber interactive storytelling theater. Features 39 classic picture-book fairy tales and character-building stories with real-time Inochi2D expressions, expressive voice narration, and live chat companionship with Bunny Bobo."
+    },
     konjacTranslator: {
       title: "Translation Gummy - Real-time Webpage Translator",
       description: "A high-privacy bilingual webpage translation Chrome extension. Seamlessly supports Google Antigravity (agy), Gemini, OpenAI, DeepSeek, and local Ollama with zero tracking and smart layout preservation."
@@ -64,7 +68,7 @@ export const translations = {
     officeHours: "Monday to Friday AM 09:00 ~ PM 18:00",
     closedDays: "Closed on Saturday and Sunday",
     serviceItems: ["Brand Website Design", "E-commerce Development", "Custom APP Development", "Web3 & NFT Development", "UI/UX Interface Design", "SEO Optimization"],
-    sitemapItems: ["About Us", "Featured Works", "Services", "Translation Gummy (Extension)", "Carrot Games", "Wind's Origin (Web3 NFT)", "Daily Mate Shop", "Tech Sharing", "Contact Us"],
+    sitemapItems: ["About Us", "Featured Works", "Services", "Sister Carol's Storytime (AI VTuber)", "Translation Gummy (Extension)", "Carrot Games", "Wind's Origin (Web3 NFT)", "Daily Mate Shop", "Tech Sharing", "Contact Us"],
     switchLang: "中文",
     contact: "Contact Us",
     contactLine: "LINE ID",
@@ -259,7 +263,7 @@ export const translations = {
   },
   zh: {
     title: "卡洛特工作室 | Carrot Studio - 專業網站與 App 製作",
-    description: "卡洛特工作室 (Carrot Studio) 提供專業的網站架設、App 製作、遊戲與 Web3 NFT 開發服務。精選作品展示：翻譯蒟蒻 (Chrome 擴充套件)、網頁製作教學網站、風之曦原 (Web3 NFT 遊戲)、Carrot Games、Daily Mate、Freezer Shop、FastOrder 與 PickUp。",
+    description: "卡洛特工作室 (Carrot Studio) 提供專業的網站架設、App 製作、遊戲與 Web3 NFT 開發服務。精選作品展示：卡洛兒姐姐說故事 (AI VTuber 互動劇場)、翻譯蒟蒻 (Chrome 擴充套件)、網頁製作教學網站、風之曦原 (Web3 NFT 遊戲)、Carrot Games、Daily Mate、Freezer Shop、FastOrder 與 PickUp。",
     heroTitle: "CARROT STUDIO",
     heroChTitle: "卡洛特工作室",
     tagline: "CREATIVE TECH STUDIO",
@@ -276,6 +280,10 @@ export const translations = {
     navWeb3: "Web3 NFT",
     navShop: "購物網",
     navArticles: "技術分享",
+    vtuberStory: {
+      title: "卡洛兒姐姐說故事 - AI VTuber 互動劇場",
+      description: "卡洛特娛樂官方 AI VTuber 說故事互動劇場。收錄 39 篇繁體中文兒童經典繪本童話與品格教育故事，結合 Inochi2D 即時表情姿態、溫暖真人感情語音與萌寵兔子波波直播互動陪伴。"
+    },
     konjacTranslator: {
       title: "翻譯蒟蒻 (Translation Gummy) - 即時翻譯機",
       description: "自建高隱私雙語對照網頁翻譯 Chrome 擴充套件。深度支援 Google Antigravity (agy)、Gemini、OpenAI、DeepSeek 及本地 Ollama，免 API Key 即開即用、極致隱私零收集、智慧防破版排版。"
@@ -331,7 +339,7 @@ export const translations = {
     officeHours: "週一至週五 AM 09:00 ~ PM 18:00",
     closedDays: "週六、週日公休",
     serviceItems: ["形象網站設計", "購物網站建置", "APP 客製開發", "Web3 / NFT 系統開發", "UI/UX 介面設計", "SEO 搜尋優化"],
-    sitemapItems: ["關於我們", "精選作品", "服務項目", "翻譯蒟蒻 (Chrome 擴充套件)", "卡洛特遊戲網", "風之曦原 (Web3 NFT)", "Daily Mate 購物網", "技術分享", "聯絡我們"],
+    sitemapItems: ["關於我們", "精選作品", "服務項目", "卡洛兒姐姐說故事 (AI VTuber)", "翻譯蒟蒻 (Chrome 擴充套件)", "卡洛特遊戲網", "風之曦原 (Web3 NFT)", "Daily Mate 購物網", "技術分享", "聯絡我們"],
     form: {
       name: "身分名稱",
       email: "電子信箱",

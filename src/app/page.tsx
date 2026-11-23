@@ -35,6 +35,13 @@ export default function Home() {
       tags: ["Next.js", "Branding"]
     },
     {
+      title: t.vtuberStory.title,
+      description: t.vtuberStory.description,
+      image: `${prefix}/images/vtuber_story.jpg`,
+      link: "https://vtuber.carrot-atelier.online/",
+      tags: ["AI VTuber", "Inochi2D", "Storytelling", "Interactive"]
+    },
+    {
       title: t.konjacTranslator.title,
       description: t.konjacTranslator.description,
       image: `${prefix}/images/konjac_translator.png`,

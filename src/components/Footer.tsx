@@ -11,6 +11,7 @@ const sitemapLinks: { href: string; external?: boolean }[] = [
   { href: "/about" },                                                    // About Us
   { href: "/#works" },                                                   // Featured Works
   { href: "/links" },                                                    // Service Items
+  { href: "https://vtuber.carrot-atelier.online/", external: true },     // Sister Carol's Storytime (AI VTuber)
   { href: "https://chromewebstore.google.com/detail/hapmdlmmjkejfdnapbechepjfkldecbn?utm_source=item-share-cb", external: true }, // Translation Gummy
   { href: "/games" },                                                    // Carrot Games
   { href: "https://nft.carrot-atelier.online/", external: true },          // Wind's Origin (Web3 NFT)
